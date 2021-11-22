@@ -98,18 +98,18 @@ Questions or comments on these guidelines are welcome and may be sent to [info@p
   <tr>
    <td><p style="text-align: right">
 
-<img src="images/email.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/email.png" alt="alt_text" title="image_tooltip">
 <strong><a href="mailto:info@padigital.org">info@padigital.org</a></strong></p>
 
    </td>
    <td>
 
-<img src="images/web.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/web.png" alt="alt_text" title="image_tooltip">
 <strong><a href="http://www.padigital.org/">www.padigital.org</a></strong>
    </td>
    <td>
 
-<img src="images/twitter.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/twitter.png" alt="alt_text" title="image_tooltip">
 <strong><a href="https://twitter.com/PADigitalNews">@PADigitalNews</a></strong>
    </td>
   </tr>
