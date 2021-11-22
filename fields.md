@@ -61,7 +61,7 @@
 
 
 # PA Digital Metadata Guidelines	Version 2.1 (MONTH 2021)
-
+<img src="images/logo.png" alt="alt_text" title="image_tooltip">
 
 ## Requirements, Recommendations, and Best Practices for Preparing Metadata for PA Digital’s DPLA Aggregator
 
