@@ -494,10 +494,10 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 </table>
 
 
-*To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [Appendix D - PA Digital to DPLA Crosswalk](#heading=h.l01zhzdf43zj)
-
-*Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output.
-
+_*To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [UPDATE THIS LINK](#heading=h.l01zhzdf43zj)
+_
+_*Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output.
+_
 
 # Guidelines Key
 
@@ -542,7 +542,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+    <td><strong>CSV Header</strong>
    </td>
    <td>Recommended header value for delimited text files
    </td>
@@ -592,7 +592,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Alternative Title</h3>
+<strong>Alternative Title</strong>
 
 
    </td>
