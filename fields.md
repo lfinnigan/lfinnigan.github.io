@@ -147,16 +147,16 @@ Incoming metadata are normalized and mapped using Extensible Stylesheet Language
 Contributors to PA Digital should strive to provide shareable, quality metadata. In _[Best Practices for OAI Data Provider Implementations and Shareable Metadata](http://webservices.itcs.umich.edu/mediawiki/oaibp/index.php/ShareableMetadataPublic)_ (2007), the authors provide recommendations to assure that aggregated records retain meaning within a shared portal. The characteristics they describe are useful for contributors to PA Digital and DPLA.
 
 
-    ***Context.** Records within DPLA are removed from the context provided by local systems and users. Descriptions that make sense locally may not be ideal in a large, shared system such as DPLA. Quality, shareable metadata remain meaningful even in an aggregated environment removed from the originating repository.
+    * Context. Records within DPLA are removed from the context provided by local systems and users. Descriptions that make sense locally may not be ideal in a large, shared system such as DPLA. Quality, shareable metadata remain meaningful even in an aggregated environment removed from the originating repository.
 
 
-    **Completeness.** Records in a shared system are most discoverable and meaningful when they are complete and robust. They should make sense standing on their own and they should be rich enough to enable discovery in a system with roughly 30 million records. Avoid the use of abbreviations or ambiguous references.
+    * Completeness. Records in a shared system are most discoverable and meaningful when they are complete and robust. They should make sense standing on their own and they should be rich enough to enable discovery in a system with roughly 30 million records. Avoid the use of abbreviations or ambiguous references.
 
 
-    **Consistency.** Syntax, elements, and vocabularies should be used consistently. This allows PA Digital and DPLA to more easily assess, prepare, and aggregate your metadata and provide discovery platforms that increase access to your valuable, contributed resources.
+    * Consistency. Syntax, elements, and vocabularies should be used consistently. This allows PA Digital and DPLA to more easily assess, prepare, and aggregate your metadata and provide discovery platforms that increase access to your valuable, contributed resources.
 
 
-    **Controlled vocabularies. **The use of widely-adopted vocabularies helps to better integrate records from other contributing institutions.
+    * Controlled vocabularies. The use of widely-adopted vocabularies helps to better integrate records from other contributing institutions.
 
 In the spirit of shareable metadata, note that PA Digital and DPLA require that metadata (_but not digital content_) be licensed as [CC0](https://creativecommons.org/about/cc0) (“No rights reserved”). The following excerpt from _[The ­Digital Public Library of America Policy Statement on Metadata](https://pro.dp.la/hubs/metadata-application-profile)_ speaks to the importance of this policy in fulfilling DPLA’s mission and values: 
 
