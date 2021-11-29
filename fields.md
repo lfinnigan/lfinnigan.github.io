@@ -1,4 +1,4 @@
-# PA Digital Metadata Guidelines	Version 2.1 (MONTH 2021) <img src="images/logo.jpg" alt="alt_text" title="image_tooltip" width="128" height="128">
+# PA Digital Metadata Guidelines, Version 2.1 (MONTH 2021) <img src="images/logo.jpg" alt="PA Digital logo" width="128" height="128">
 
 ## Requirements, Recommendations, and Best Practices for Preparing Metadata for PA Digital’s DPLA Aggregator
 
@@ -69,7 +69,7 @@ Our aggregation software usesis based on the [Open Archives Initiative’s Proto
 
 * We recommend the use of qualified Dublin Core elements whenever possible. If your repository does not support the use of qualified Dublin Core, use the matching simple Dublin Core element recommended in these guidelines.
 * Unless otherwise specified, metadata should describe the **_original resource_**, not its digital representation.
-* Common delimiting characters such as pipes (“ | “) and semicolons (“ ; ”) should be avoided; unless otherwise specified, PA Digital uses semicolons to delimit fields with multiple values.
+* Common delimiting characters such as pipes (" | ") and semicolons (" ; ") should be avoided; unless otherwise specified, PA Digital uses semicolons to delimit fields with multiple values.
 * URIs that communicate rights held over the digitized resource, such as those from rightsstatements.org and creativecommons.org, are preferred; textual rights statements are acceptable.When using URIs, they should be added in addition to string values, not in place of them.
 
 We also accept metadata in MODS or MARC in XML, as well as in consistently structured, delimited text files (CSVs, TSVs, etc.).
@@ -465,7 +465,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>The simple Dublin Core element to which a field should map if qualified term is unavailable
    </td>
@@ -515,79 +515,50 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 
 # Fields
 
-
 <table>
   <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<strong>Alternative Title</strong>
-
-
-   </td>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Alternative Title</strong></td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Optional
-   </td>
+   <td><strong>Status</strong></td>
+   <td>Optional</td>
   </tr>
   <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>Any alternative title of the described resource including abbreviations and translations
-   </td>
+   <td><strong>Description</strong></td>
+   <td>Any alternative title of the described resource including abbreviations and translations</td>
   </tr>
   <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:alternative
-   </td>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:alternative</td>
   </tr>
   <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Title-Alternative
-   </td>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Title-Alternative</td>
   </tr>
   <tr>
-   <td>CSV Header
-   </td>
-   <td>Alternative_Title
-   </td>
+   <td><strong>CSV Header</strong></td>
+   <td>Alternative_Title</td>
   </tr>
   <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
   </tr>
   <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Natural language
-</li>
-</ul>
-   </td>
+   <td><strong>CV/Syntax</strong></td>
+   <td>Natural language</td>
   </tr>
   <tr>
    <td><strong>Notes and Best Practices</strong>
    </td>
    <td>
-<ul>
-
-<li>Comparable to MARC variations of titles (such as alternative spellings)
-
-<li>May also be used for translations of titles in foreign languages
-
-<li>Avoid use of explanatory or qualifying symbols (e.g., brackets)
-
-<li>Where there are multiple Title fields, any instance after the first will map to Alternative Title
-</li>
-</ul>
+    <ul>
+        <li>Comparable to MARC variations of titles (such as alternative spellings)
+        <li>May also be used for translations of titles in foreign languages
+        <li>Avoid use of explanatory or qualifying symbols (e.g., brackets)
+        <li>Where there are multiple Title fields, any instance after the first will map to Alternative Title
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
@@ -595,7 +566,6 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    </td>
    <td>
 <ul>
-
 <li>Undergraduate course catalog, 1961-62
 </li>
 </ul>
@@ -603,619 +573,445 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
   </tr>
 </table>
 
+<table>
+  <tr>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Collection Name</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Recommended or Derived (or Required, see below)</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong></td>
+   <td>Collection or aggregation of which described resource is a part</td>
+  </tr>
+  <tr>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:isPartOf</td>
+  </tr>
+  <tr>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Relation-Is Part Of</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Collection_Name</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>Notes and Best Practices</strong></td>
+   <td>
+    <ul>
+        <li>Whenever possible, PA Digital will use the setSpec, or collection identifier, value in the OAI-PMH output to generate a human-readable, normalized Collection Name
+        <li>SetSpec values must be valid; see the pattern requirements under setSpecType in the OAI-PMH specifications
+        <li>Institutions that wish to map collectionmapFor institutions that do not supply collection names fromin their metadata rather than the setSpec should inform PA Digital during the onboarding processor that want to apply dcterms:isPartOf differently than what is recommended here, Collection Name(s) may be derived from metadata elsewhere in the record. For example, a collection name may be derived from the setSpec value in the OAI-PMH outpu
+        </li>
+    </ul>
+   </td>
+  </tr>
+</table>
 
+<table>
+  <tr>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Contributing Institution</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Derived or PA Digital supplied</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong></td>
+   <td>The organization that supplies metadata to PA Digital</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Data_Provider</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>Notes and Best Practices</strong></td>
+   <td>
+    <ul>
+        <li>Values for this field may be mapped from consistently formatted metadata elsewhere in a record; examples include identifiers and object URLs
+        <li>Values may also be supplied by PA Digital during the ingestion process. Institutions should specify during onboarding the desired value(s) for this field
+        <li>Under certain circumstances, Contributing Institution values may be mapped from metadata; names should be normalized, consistent, and identifiable
+        </li>
+    </ul>
+   </td>
+  </tr>
+</table>
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
+<table>
+  <tr>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Contributor</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Optional</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong></td>
+   <td>An entity responsible for making secondary contributions to the described resource. Examples of a Contributor include a person, an organization, or a service</td>
+  </tr>
+  <tr>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:contributor</td>
+  </tr>
+  <tr>
+   <td><strong>Simple DC Element</strong></td>
+   <td>dc:contributor</td>
+  </tr>
+  <tr>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Contributor</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Contributor</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>CV/Syntax</strong></td>
+   <td>
+    <ul>
+        <li>Use standard vocabularies such as <a href="http://id.loc.gov/">LCNAF</a>, <a href="https://viaf.org/">VIAF</a>, or <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">ULAN</a> whenever possible; consistently applied local vocabularies are acceptable
+        <li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)
+        </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Notes and Best Practices</strong></td>
+   <td>
+    <ul>
+        <li>Use a semicolon to separate multiple values
+        <li>Avoid use of placeholder values (e.g., “Unknown”)
+        <li>For oral histories, Contributor is the interviewer
+        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
+        </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Examples</strong></td>
+   <td>
+    <ul>
+        <li>Beck, James M. (James Montgomery), 1861-1936
+        <li>United States. Army Map Service
+        </li>
+    </ul>
+   </td>
+  </tr>
+</table>
 
 
 <table>
   <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Creator</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Recommended</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong></td>
+   <td>An entity primarily responsible for making the described resource. Examples of a Creator include a person, an organization, or a service</td>
+  </tr>
+  <tr>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:creator</td>
+  </tr>
+  <tr>
+   <td><strong>Simple DC Element</strong></td>
+   <td>dc:creator</td>
+  </tr>
+  <tr>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Creator</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Creator</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>CV/Syntax</strong></td>
    <td>
-<h3>Collection Name</h3>
-
-
+    <ul>
+        <li>Use standard vocabularies such as <a href="http://id.loc.gov/">LCNAF</a>, <a href="https://viaf.org/">VIAF</a>, or <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">ULAN</a> whenever possible; consistently applied local vocabularies are acceptable
+        <li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Recommended or Derived (or Required, see below)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>Collection or aggregation of which described resource is a part
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:isPartOf
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Relation-Is Part Of
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Collection_Name
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
+   <td><strong>Notes and Best Practices</strong></td>
    <td>
-<ul>
-
-<li>Whenever possible, PA Digital will use the setSpec, or collection identifier, value in the OAI-PMH output to generate a human-readable, normalized Collection Name
-
-<li>SetSpec values must be valid; see the pattern requirements under setSpecType in the OAI-PMH specifications
-
-<li>Institutions that wish to map collectionmapFor institutions that do not supply collection names fromin their metadata rather than the setSpec should inform PA Digital during the onboarding processor that want to apply dcterms:isPartOf differently than what is recommended here, Collection Name(s) may be derived from metadata elsewhere in the record. For example, a collection name may be derived from the setSpec value in the OAI-PMH output
-</li>
-</ul>
+    <ul>
+        <li>Use a semicolon to separate multiple values
+        <li>Avoid use of placeholder values (e.g., “Unknown”)
+        <li>For oral histories, Creator is the interviewee
+        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
+        </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Examples</strong></td>
+   <td>
+    <ul>
+        <li>Littell, Franklin H. (Franklin Hamlin), 1917-2009
+        <li>Catholic Church. Archdiocese of Philadelphia (Pa.)
+        </li>
+    </ul>
    </td>
   </tr>
 </table>
 
 
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
-
-
 <table>
   <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Date</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Recommended</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong></td>
+   <td>Date of creation of the described resource</td>
+  </tr>
+  <tr>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:date</td>
+  </tr>
+  <tr>
+   <td><strong>Simple DC Element</strong></td>
+   <td>dc:date</td>
+  </tr>
+  <tr>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Date</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Date</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>CV/Syntax</strong></td>
    <td>
-<h3>
-    Contributing Institution</h3>
-
-
+    <ul>
+        <li>Prefer use of <a href="https://www.loc.gov/standards/datetime/">EDTF</a> for both known and uncertain date
+        <li>DPLA can parse many types and formats of dates. Please refer to their <a href="https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing">Geographic and Temporal Guidelines</a> for examples
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Derived or PA Digital supplied
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>The organization that supplies metadata to PA Digital
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Data_Provider
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
+   <td><strong>Notes and Best Practices</strong></td>
    <td>
-<ul>
-
-<li>Values for this field may be mapped from consistently formatted metadata elsewhere in a record; examples include identifiers and object URLs
-
-<li>Values may also be supplied by PA Digital during the ingestion process. Institutions should specify during onboarding the desired value(s) for this field
-
-<li>Under certain circumstances, Contributing Institution values may be mapped from metadata; names should be normalized, consistent, and identifiable
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
-
-
-<table>
-  <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<h3>Contributor</h3>
-
-
+    <ul>
+        <li>Avoid use of placeholder values (e.g., “Unknown”, “n.d.”). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank
+        <li>For guidance on dates or date ranges that reflect “aboutness” (for example, a memoir <em>about</em> the 1870s) please see 
+        <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Temporal Coverage"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+        <a href="#heading=h.tso54ioou99r">Temporal Coverage</a>
+        <li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>An entity responsible for making secondary contributions to the described resource. Examples of a Contributor include a person, an organization, or a service
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:contributor
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Simple DC Element </strong>
-   </td>
-   <td>dc:contributor
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Contributor
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Contributor
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Use standard vocabularies such as <a href="http://id.loc.gov/">LCNAF</a>, <a href="https://viaf.org/">VIAF</a>, or <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">ULAN</a> whenever possible; consistently applied local vocabularies are acceptable
-
-<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Use a semicolon to separate multiple values
-
-<li>Avoid use of placeholder values (e.g., “Unknown”)
-
-<li>For oral histories, Contributor is the interviewer
-
-<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Examples</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Beck, James M. (James Montgomery), 1861-1936
-
-<li>United States. Army Map Service
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
-
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
-
-
-<table>
-  <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<h3>Creator</h3>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Recommended
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>An entity primarily responsible for making the described resource. Examples of a Creator include a person, an organization, or a service
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:creator
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Simple DC Element </strong>
-   </td>
-   <td>dc:creator
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Creator
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Creator
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Use standard vocabularies such as <a href="http://id.loc.gov/">LCNAF</a>, <a href="https://viaf.org/">VIAF</a>, or <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">ULAN</a> whenever possible; consistently applied local vocabularies are acceptable
-
-<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Use a semicolon to separate multiple values
-
-<li>Avoid use of placeholder values (e.g., “Unknown”)
-
-<li>For oral histories, Creator is the interviewee
-
-<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Examples</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Littell, Franklin H. (Franklin Hamlin), 1917-2009
-
-<li>Catholic Church. Archdiocese of Philadelphia (Pa.)
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
-
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
-
-
-<table>
-  <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<h3>Date</h3>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Recommended
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>Date of creation of the described resource
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:date
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Simple DC Element </strong>
-   </td>
-   <td>dc:date
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Date
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Date
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Prefer use of <a href="https://www.loc.gov/standards/datetime/">EDTF</a> for both known and uncertain dates
-
-<li>DPLA can parse many types and formats of dates. Please refer to their <a href="https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing">Geographic and Temporal Guidelines</a> for examples
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Avoid use of placeholder values (e.g., “Unknown”, “n.d.”). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank
-
-<li>For guidance on dates or date ranges that reflect “aboutness” (for example, a memoir <em>about</em> the 1870s) please see 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Temporal Coverage"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.tso54ioou99r">Temporal Coverage</a>
-
-<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Examples</strong>
-   </td>
+   <td><strong>Examples</strong></td>
    <td>Known date
-<ul>
-
-<li>1999
-
-<li>1999-05
-
-<li>1999-05-01
-
-<p>
+    <ul>
+        <li>1999
+        <li>1999-05
+        <li>1999-05-01
+        </li>
+    </ul>
 Uncertain date
-<ul>
-
-<li>1999?
-
-<li>199u
-
-<li>1999-05?
-
-<li>1999-05-01?
-
-<p>
+    <ul>
+        <li>1999?
+        <li>199u
+        <li>1999-05?
+        <li>1999-05-01?
+        </li>
+    </ul>
 Approximate date
-<ul>
-
-<li>1999~
-
-<li>1999-05~
-
-<li>1999-05-01~
-
-<p>
+    <ul>
+        <li>1999~
+        <li>1999-05~
+        <li>1999-05-01~
+        </li>
+    </ul>
 Date range
-<ul>
-
-<li>1992/1995
-
-<li>1990-02-08/2017-03-09
-
-<li>1984/2004-06~
-
-<p>
+    <ul>
+        <li>1992/1995
+        <li>1990-02-08/2017-03-09
+        <li>1984/2004-06~
+        </li>
+    </ul>
 Acceptable non-EDTF values
-<ul>
-
-<li>circa 1999
-
-<li>ca. 1999
-
-<li>approximately 1999
-
-<li>1992-1995
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+    <ul>
+        <li>circa 1999
+        <li>ca. 1999
+        <li>approximately 1999
+        <li>1992-1995
+        </li>
+    </ul>
    </td>
   </tr>
 </table>
 
 
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
+<table>
+  <tr>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Status</strong></td>
+   <td>Recommended</td>
+  </tr>
+  <tr>
+   <td><strong>Description</strong>
+   </td><td>A free text account of the described resource that succinctly captures its "aboutness"</td>
+  </tr>
+  <tr>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:description</td>
+  </tr>
+  <tr>
+   <td><strong>Simple DC Element</strong></td>
+   <td>dc:description</td>
+  </tr>
+  <tr>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><strong>CSV Header</strong></td>
+   <td>Description</td>
+  </tr>
+  <tr>
+   <td><strong>Repeatable</strong></td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td><strong>CV/Syntax</strong></td>
+   <td>Natural language; semicolons may be used as punctuation</td>
+  </tr>
+  <tr>
+   <td><strong>Notes and Best Practices</strong></td>
+   <td>
+    <ul>
+        <li>Description at the object-level is highly preferred
+        <li>Contributing institutions should consider the utility of the Description field in the DPLA portal as a rich source of keywords for discovery
+        <li>Do not map fields with OCR or full-text transcription into the Description field
+        <li>Revise potentially harmful content descriptions with more respectful terminology
+        </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Examples</strong></td>
+   <td>
+    <ul>
+        <li>Program dated February 14, 1943 for a lecture titled "This Year of Our Lord," given by Fordham University President Robert I. Gannon, S.J. at the Hotel Casey in Scranton, Pennsylvania. Gannon's lecture was part of the University of Scranton Lecture series. The program also advertises the next lecture in the series, a talk on "Christendom and the Coming Peace" by Fordham University professor Gerald Groveland Walsh, S.J. scheduled for March 14, 1943. 4 pages.
+        <li>Mummer's Parade on New Year's Day. South Broad Street, South Philadelphia, PA.
+        <li>Oral history recorded December 23, 1981 and May 20, 1982 in Newark, N.J. and Rochester, N.Y.
+        </li>
+    </ul>
+   </td>
+  </tr>
+</table>
 
 
 <table>
   <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<h3>Description</h3>
-
-
-   </td>
+   <td><strong>PA Digital Label</strong></td>
+   <td><strong>Extent</strong></td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Recommended
-   </td>
+   <td><strong>Status</strong></td>
+   <td>Optional</td>
   </tr>
   <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>A free text account of the described resource that succinctly captures its “aboutness”
-   </td>
+   <td><strong>Description</strong></td>
+   <td>The size or duration of the described resource. Examples for print materials include number of pages, a specification of length, width, and breadth, or for audio-visual materials, a time period of duration in hours, minutes, and seconds</td>
   </tr>
   <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:description
-   </td>
+   <td><strong>Qualified DC Element</strong></td>
+   <td>dcterms:extent</td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element</strong>
-   </td>
-   <td>dc:description
-   </td>
+   <td><strong>CONTENTdm Mapping</strong></td>
+   <td>Format-Extent</td>
   </tr>
   <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Description
-   </td>
+   <td><strong>CSV Header</strong></td>
+   <td>Extent</td>
   </tr>
   <tr>
-   <td>CSV Header
-   </td>
-   <td>Description
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
+   <td><strong>Repeatable</strong></td>
    <td>Yes
    </td>
   </tr>
   <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
+   <td><strong>CV/Syntax</strong></td>
    <td>
-<ul>
-
-<li>Natural language; semicolons may be used as punctuation
-</li>
-</ul>
+    <ul>
+        <li>Natural language; semicolons may be used as punctuation
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
+   <td><strong>Notes and Best Practices</strong></td>
    <td>
-<ul>
-
-<li>Description at the object-level is highly preferred
-
-<li>Contributing institutions should consider the utility of the Description field in the DPLA portal as a rich source of keywords for discovery
-
-<li>Do not map fields with OCR or full-text transcription into the Description field
-
-<li>Revise potentially harmful content descriptions with more respectful terminology
-</li>
-</ul>
+    <ul>
+        <li>Recommend use of a content standard such as <a href="https://www.loc.gov/aba/rda/">RDA</a>, <a href="http://vraweb.org/resources/cataloging-cultural-objects/">CCO</a>, or <a href="http://rbms.info/dcrm/dcrms/">DCRMS</a> when applicable
+        <li>Use a semicolon to separate multiple values
+        <li>For dimensions, include units. Spell out abbreviations for maximum clarity
+        <li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary
+        </li>
+    </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Examples</strong>
-   </td>
+   <td><strong>Examples</strong></td>
    <td>
-<ul>
-
-<li>Program dated February 14, 1943 for a lecture titled "This Year of Our Lord," given by Fordham University President Robert I. Gannon, S.J. at the Hotel Casey in Scranton, Pennsylvania. Gannon's lecture was part of the University of Scranton Lecture series. The program also advertises the next lecture in the series, a talk on "Christendom and the Coming Peace" by Fordham University professor Gerald Groveland Walsh, S.J. scheduled for March 14, 1943. 4 pages.
-
-<li>Mummer's Parade on New Year's Day. South Broad Street, South Philadelphia, PA.
-
-<li>Oral history recorded December 23, 1981 and May 20, 1982 in Newark, N.J. and Rochester, N.Y.
-</li>
-</ul>
+    <ul>
+        <li>4 7/8 x 8 3/16 inches
+        <li>1 map on 13 sheets
+        <li>00:14:21
+        </li>
+    </ul>
    </td>
   </tr>
 </table>
-
-
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
 
 
 <table>
@@ -1223,106 +1019,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Extent</h3>
-
-
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Description</strong>
-   </td>
-   <td>The size or duration of the described resource. Examples for print materials include number of pages, a specification of length, width, and breadth, or for audio-visual materials, a time period of duration in hours, minutes, and seconds
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td>dcterms:extent
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CONTENTdm Mapping</strong>
-   </td>
-   <td>Format-Extent
-   </td>
-  </tr>
-  <tr>
-   <td>CSV Header
-   </td>
-   <td>Extent
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Repeatable</strong>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>CV/Syntax</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Natural language; semicolons may be used as punctuation
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Notes and Best Practices</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Recommend use of a content standard such as <a href="https://www.loc.gov/aba/rda/">RDA</a>, <a href="http://vraweb.org/resources/cataloging-cultural-objects/">CCO</a>, or <a href="http://rbms.info/dcrm/dcrms/">DCRMS</a> when applicable
-
-<li>Use a semicolon to separate multiple values
-
-<li>For dimensions, include units. Spell out abbreviations for maximum clarity
-
-<li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Examples</strong>
-   </td>
-   <td>
-<ul>
-
-<li>4 7/8 x 8 3/16 inches
-
-<li>1 map on 13 sheets
-
-<li>00:14:21
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
-
-
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "[Back to Field Table]"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[[Back to Field Table]](#heading=h.3sf8crbrgxc)
-
-
-<table>
-  <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>
-<h3>File Format</h3>
+<strong>File Format</strong>
 
 
    </td>
@@ -1346,7 +1043,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:format
    </td>
@@ -1358,7 +1055,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Format
    </td>
@@ -1431,7 +1128,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Format</h3>
+<strong>Format</strong>
 
 
    </td>
@@ -1455,7 +1152,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:type
    </td>
@@ -1467,7 +1164,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Type
    </td>
@@ -1540,7 +1237,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Identifier</h3>
+<strong>Identifier</strong>
 
 
    </td>
@@ -1564,7 +1261,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:identifier
    </td>
@@ -1576,7 +1273,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Identifier
    </td>
@@ -1644,7 +1341,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>IIIF Base URL</h3>
+<strong>IIIF Base URL</strong>
 
 
    </td>
@@ -1668,7 +1365,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>IIIF_Base
    </td>
@@ -1720,7 +1417,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>IIIF Manifest</h3>
+<strong>IIIF Manifest</strong>
 
 
    </td>
@@ -1744,7 +1441,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>IIIF_Man
    </td>
@@ -1796,7 +1493,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Intermediate Provider</h3>
+<strong>Intermediate Provider</strong>
 
 
    </td>
@@ -1814,7 +1511,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Intermediate_Provider
    </td>
@@ -1866,7 +1563,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Language</h3>
+<strong>Language</strong>
 
 
    </td>
@@ -1890,7 +1587,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:language
    </td>
@@ -1902,7 +1599,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Language
    </td>
@@ -1967,7 +1664,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Media Master</h3>
+<strong>Media Master</strong>
 
 
    </td>
@@ -2054,7 +1751,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Place</h3>
+<strong>Place</strong>
 
 
    </td>
@@ -2078,7 +1775,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:coverage 
    </td>
@@ -2090,7 +1787,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Place
    </td>
@@ -2167,7 +1864,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Preview</h3>
+<strong>Preview</strong>
 
 
    </td>
@@ -2191,13 +1888,13 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:identifier
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Preview
    </td>
@@ -2236,7 +1933,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Publisher</h3>
+<strong>Publisher</strong>
 
 
    </td>
@@ -2260,7 +1957,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:publisher
    </td>
@@ -2272,7 +1969,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Publisher
    </td>
@@ -2343,7 +2040,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Relation</h3>
+<strong>Relation</strong>
 
 
    </td>
@@ -2367,7 +2064,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:relation
    </td>
@@ -2379,7 +2076,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Relation
    </td>
@@ -2440,7 +2137,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Replaced By</h3>
+<strong>Replaced By</strong>
 
 
    </td>
@@ -2471,7 +2168,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Replaced_By
    </td>
@@ -2532,7 +2229,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Replaces</h3>
+<strong>Replaces</strong>
 
 
    </td>
@@ -2562,7 +2259,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Replaces
    </td>
@@ -2623,7 +2320,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Rights</h3>
+<strong>Rights</strong>
 
 
    </td>
@@ -2651,7 +2348,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:rights
    </td>
@@ -2663,7 +2360,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Rights
    </td>
@@ -2742,7 +2439,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Rights Holder</h3>
+<strong>Rights Holder</strong>
 
 
    </td>
@@ -2772,7 +2469,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Rights_Holder
    </td>
@@ -2833,7 +2530,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Rights URI</h3>
+<strong>Rights URI</strong>
 
 
    </td>
@@ -2861,7 +2558,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:rights
    </td>
@@ -2873,7 +2570,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Rights_URI
    </td>
@@ -2955,7 +2652,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Source</h3>
+<strong>Source</strong>
 
 
    </td>
@@ -2979,7 +2676,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:source
    </td>
@@ -2991,7 +2688,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Source
    </td>
@@ -3052,7 +2749,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Subject</h3>
+<strong>Subject</strong>
 
 
    </td>
@@ -3076,7 +2773,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:subject
    </td>
@@ -3088,7 +2785,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Subject
    </td>
@@ -3192,7 +2889,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Temporal Coverage</h3>
+<strong>Temporal Coverage</strong>
 
 
    </td>
@@ -3216,7 +2913,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:subject
    </td>
@@ -3228,7 +2925,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Temporal
    </td>
@@ -3305,7 +3002,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Title</h3>
+<strong>Title</strong>
 
 
    </td>
@@ -3329,7 +3026,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:title
    </td>
@@ -3341,7 +3038,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Title
    </td>
@@ -3414,7 +3111,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>Type</h3>
+<strong>Type</strong>
 
 
    </td>
@@ -3438,7 +3135,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:type
    </td>
@@ -3450,7 +3147,7 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>Type
    </td>
@@ -3525,7 +3222,7 @@ Acceptable non-EDTF values
    <td><strong>PA Digital Label</strong>
    </td>
    <td>
-<h3>URL</h3>
+<strong>URL</strong>
 
 
    </td>
@@ -3549,13 +3246,13 @@ Acceptable non-EDTF values
    </td>
   </tr>
   <tr>
-   <td><strong>Simple DC Element </strong>
+   <td><strong>Simple DC Element</strong>
    </td>
    <td>dc:identifier
    </td>
   </tr>
   <tr>
-   <td>CSV Header
+   <td><strong>CSV Header</strong>
    </td>
    <td>URL
    </td>
