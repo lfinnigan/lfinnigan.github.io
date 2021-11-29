@@ -58,8 +58,6 @@
 
 <p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
-
-
 # PA Digital Metadata Guidelines	Version 2.1 (MONTH 2021)
 <img src="images/logo.jpg" alt="alt_text" title="image_tooltip" width="128" height="128">
 
@@ -149,7 +147,7 @@ Incoming metadata are normalized and mapped using Extensible Stylesheet Language
 Contributors to PA Digital should strive to provide shareable, quality metadata. In _[Best Practices for OAI Data Provider Implementations and Shareable Metadata](http://webservices.itcs.umich.edu/mediawiki/oaibp/index.php/ShareableMetadataPublic)_ (2007), the authors provide recommendations to assure that aggregated records retain meaning within a shared portal. The characteristics they describe are useful for contributors to PA Digital and DPLA.
 
 
-    **Context. **Records within DPLA are removed from the context provided by local systems and users. Descriptions that make sense locally may not be ideal in a large, shared system such as DPLA. Quality, shareable metadata remain meaningful even in an aggregated environment removed from the originating repository.
+    ***Context.** Records within DPLA are removed from the context provided by local systems and users. Descriptions that make sense locally may not be ideal in a large, shared system such as DPLA. Quality, shareable metadata remain meaningful even in an aggregated environment removed from the originating repository.
 
 
     **Completeness.** Records in a shared system are most discoverable and meaningful when they are complete and robust. They should make sense standing on their own and they should be rich enough to enable discovery in a system with roughly 30 million records. Avoid the use of abbreviations or ambiguous references.
