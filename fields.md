@@ -167,7 +167,7 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 [LF to add]
 
 
-# _Quick Reference: _PA Digital Metadata Mapping Recommendations for Dublin Core*
+# Quick Reference: PA Digital Metadata Mapping Recommendations for Dublin Core
 
 
 <table>
@@ -204,7 +204,7 @@ _The DPLA hopes that the content and resources in the library will be put to cre
   <tr>
    <td>Collection Name
    </td>
-   <td>Required or Derived**Recommended or Derived**
+   <td>Required or Derived**
    </td>
    <td>dcterms:isPartOf
    </td>
@@ -494,16 +494,9 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 </table>
 
 
-_*To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see 
+*To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [Appendix D - PA Digital to DPLA Crosswalk](#heading=h.l01zhzdf43zj)
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Appendix D - PA Digital to DPLA Crosswalk"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Appendix D - PA Digital to DPLA Crosswalk](#heading=h.l01zhzdf43zj)_
-
-_**Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output._
-
-
-# 
+*Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output.
 
 
 # Guidelines Key
