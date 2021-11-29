@@ -167,7 +167,7 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 [LF to add]
 
 
-# Quick Reference: PA Digital Metadata Mapping Recommendations for Dublin Core
+# Quick Reference: PA Digital Mapping Recommendations for Dublin Core
 
 
 <table>
