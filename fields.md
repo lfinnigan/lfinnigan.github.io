@@ -494,10 +494,9 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 </table>
 
 
-_*To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [UPDATE THIS LINK](#heading=h.l01zhzdf43zj)
-_
-_*Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output.
-_
+*_To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [UPDATE THIS LINK](#heading=h.l01zhzdf43zj)_
+
+*_Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output._
 
 # Guidelines Key
 
