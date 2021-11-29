@@ -58,8 +58,7 @@
 
 <p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
-# PA Digital Metadata Guidelines	Version 2.1 (MONTH 2021)
-<img src="images/logo.jpg" alt="alt_text" title="image_tooltip" width="128" height="128">
+# PA Digital Metadata Guidelines	Version 2.1 (MONTH 2021) <img src="images/logo.jpg" alt="alt_text" title="image_tooltip" width="128" height="128">
 
 ## Requirements, Recommendations, and Best Practices for Preparing Metadata for PA Digital’s DPLA Aggregator
 
