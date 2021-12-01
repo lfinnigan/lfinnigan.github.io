@@ -203,7 +203,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | <ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see [Temporal Coverage](#temporal)<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul> |
 | **Examples** | <ul><li>Known date</li><ul><li>1999</li><li>1999-05</li><li>1999-05-01</li></ul><li>Uncertain date</li><ul><li>1999?</li><li>199u</li><li>1999-05?</li><li>1999-05-01?</li></ul><li>Approximate date</li><ul><li>1999&#126;</li><li>1999-05&#126;</li><li>1999-05-01&#126;</li></ul><li>Date range</li><ul><li>1992/1995</li><li>1990-02-08/2017-03-09</li><li>1984/2004-06&#126;</li></ul><li>Acceptable non-EDTF values</li><ul><li>circa 1999</li><li>ca. 1999</li><li>approximately 1999</li><li>1992-1995</ul></ul> |
 
-| PA Digital Label | <a name="description">Description</a> |
+| PA Digital Label | <a name="description"/>Description |
 |--|--|
 | **Status** | Recommended |
 | **Description** | A free text account of the described resource that succinctly captures its "aboutness" |
