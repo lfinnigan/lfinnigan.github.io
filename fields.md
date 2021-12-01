@@ -1,4 +1,6 @@
-# <img src="images/logo.jpg" alt="PA Digital logo" width="128" height="128"> PA Digital Metadata Application Profile and Guidelines, Version 2.1 (MONTH 2021)
+<img src="images/logo.jpg" alt="PA Digital logo" width="128" height="128">
+
+# PA Digital Metadata Application Profile and Guidelines, Version 2.1 (MONTH 2021)
 
 ### Requirements, Recommendations, and Best Practices for Preparing Metadata for PA Digital’s DPLA Aggregator
 <br>
