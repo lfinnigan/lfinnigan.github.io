@@ -1,3 +1,4 @@
+<link type="text/css" rel="stylesheet" href="main.css" />
 <img src="images/logo.jpg" alt="PA Digital logo" width="128" height="128">
 
 # PA Digital Metadata Application Profile and Guidelines, Version 2.1 (MONTH 2021)
