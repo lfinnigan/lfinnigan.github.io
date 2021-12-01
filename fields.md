@@ -190,7 +190,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Creator is the interviewee<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul> |
 | **Examples** | <ul><li>Littell, Franklin H. (Franklin Hamlin), 1917-2009<li>Catholic Church. Archdiocese of Philadelphia (Pa.)</li></ul> |
 
-| PA Digital Label | Date |
+| PA Digital Label | <a href="date">Date</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | Date of creation of the described resource |
@@ -203,7 +203,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | <ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see [Temporal Coverage](#temporal)<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul> |
 | **Examples** | <ul><li>Known date</li><ul><li>1999</li><li>1999-05</li><li>1999-05-01</li></ul><li>Uncertain date</li><ul><li>1999?</li><li>199u</li><li>1999-05?</li><li>1999-05-01?</li></ul><li>Approximate date</li><ul><li>1999&#126;</li><li>1999-05&#126;</li><li>1999-05-01&#126;</li></ul><li>Date range</li><ul><li>1992/1995</li><li>1990-02-08/2017-03-09</li><li>1984/2004-06&#126;</li></ul><li>Acceptable non-EDTF values</li><ul><li>circa 1999</li><li>ca. 1999</li><li>approximately 1999</li><li>1992-1995</ul></ul> |
 
-| PA Digital Label | Description |
+| PA Digital Label | <a name="description">Description</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | A free text account of the described resource that succinctly captures its "aboutness" |
@@ -242,7 +242,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | <ul><li>application/pdf</li><li>audio/mpeg</li><li>image/jpeg</li><li>image/jp2</li><li>image/tiff</li><li>video/mpeg</li><li>video/mp4</li></ul> |
 
 
-| PA Digital Label | Format |
+| PA Digital Label | <a name="format">Format</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | Physical medium of the described resource |
@@ -252,7 +252,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Type |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [AAT](http://www.getty.edu/research/tools/vocabularies/aat) or [TGM](http://id.loc.gov/vocabulary/graphicMaterials); consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the Type field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see Type for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the [Type](#title) field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see [Type](#title) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
 | **Examples** | <ul><li>Fire insurance maps</li><li>Zines</li></ul> |
 
 
@@ -326,7 +326,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | https://archives.philamuseum.org/jgj/JCC_B043_F001_001/cat-0003 |
 
 
-| PA Digital Label | Place |
+| PA Digital Label | <a name="place">Place</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | Geographic location referenced or depicted by the described resource; captures its "aboutness" |
@@ -405,7 +405,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | <ul><li>Federal Highway Administration Office of Motor Carriers Register</li><li>Grants for International and Foreign Programs</li></ul> |
 
 
-| PA Digital Label | Rights |
+| PA Digital Label | <a name="rights">Rights</a> |
 |--|--|
 | **Status** | A rights statement is required. This can be a uniform resource identifier (URI) from RightsStatements.org or Creative Commons, or a natural language statement |
 | **Description** | Information about rights held in and over the digitized resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Natural language statements map to PA Digital's Rights field upon ingest |
@@ -415,7 +415,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to Rights URI</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See Rights URI for guidance on using and mapping rights statement URIs |
+| **Notes and Best Practices** | <ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to [Rights URI](#rightsU)</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See [Rights URI](#rightsU) for guidance on using and mapping rights statement URIs |
 | **Examples** | <ul><li>Copyright status of the resource is unknown.</li><li>In the public domain and may be used without copyright restriction.</li></ul> |
 
 | PA Digital Label | Rights Holder |
@@ -430,7 +430,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | If using simple Dublin Core, do not map this information to dc:rights |
 | **Examples** | <ul><li>University of Scranton</li></ul> |
 
-| PA Digital Label | Rights URI |
+| PA Digital Label | <a name="rightsU">Rights URI</a> |
 |--|--|
 | **Status** | A rights statement is required. This can be a uniform resource identifier (URI) from RightsStatements.org/Creative Commons or a natural language statement |
 | **Description** | A standardized rights statement URI from RightsStatements.org or Creative Commons that conveys information about rights held in and over the digitized resource |
@@ -440,7 +440,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights_URI |
 | **Repeatable** | No |
 | **CV/Syntax** | Must use URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/) |
-| **Notes and Best Practices** | <ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See Rights for guidance on using and mapping natural language rights statements |
+| **Notes and Best Practices** | <ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See [Rights](#rights) for guidance on using and mapping natural language rights statements |
 | **Examples** | <ul><li>http://rightsstatements.org/vocab/InC-RUU/1.0/</li><li>http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>https://creativecommons.org/publicdomain/zero/1.0/</li></ul> |
 
 | PA Digital Label | Source |
@@ -456,7 +456,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | Use a semicolon to separate multiple values |
 | **Examples** | <ul><li>Collection, Box 1, Folder 1</li><li>File A93-25 Folder 1</li></ul> |
 
-| PA Digital Label | Subject |
+| PA Digital Label | <a name="subject">Subject</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | The topic of the described resource |
@@ -466,7 +466,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Subject |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [LCSH](http://id.loc.gov/authorities/subjects.html), [MeSH](https://meshb.nlm.nih.gov/search), [FAST](http://fast.oclc.org/searchfast/ ), or [LCNAF](http://id.loc.gov/authorities/names.html) whenever possible; consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Use uncoordinated subject headings when possible and enter geographic and format information in separate fields. See Place and Format</li><li>When subdividing a subject term, prefer one space between LCSH subjects and dashes (Term -- Term)</li><li>If using a geographic or form subdivision, provide a corresponding value in Place or Format respectively</li></ul> |
+| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Use uncoordinated subject headings when possible and enter geographic and format information in separate fields. See [Place](#place) and [Format](#format)</li><li>When subdividing a subject term, prefer one space between LCSH subjects and dashes (Term -- Term)</li><li>If using a geographic or form subdivision, provide a corresponding value in [Place](#place) or [Format](#format) respectively</li></ul> |
 | **Examples** | <ul><li>Coal miners -- Social conditions</li><li><pre><code>&#60;dc:subject&#62;Civil rights movements&#60;/dc:subject> AND &#60;dc:coverage>Philadelphia (Pa.)&#60;/dc:coverage&#62;</pre></code><br>Instead of: <pre><code>&#60;dc:subject&#62;Civil rights movements -- Pennsylvania -- Philadelphia&#60;/dc:subject&#62;</code></pre></li><li><pre><code>&#60;dc:subject&#62;Harlem Renaissance&#60;/dc:subject&#62; AND &#60;dc:type&#62;Maps&#60;/dc:type&#62;</pre></code><br>Instead of:<pre><code>&#60;dc:subject&#62;Harlem Renaissance -- Maps&#60;/dc:subject&#62;</pre></code></li></ul> |
 
 | PA Digital Label | <a name="temporal">Temporal Coverage</a> |
@@ -479,7 +479,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Temporal |
 | **Repeatable** | Yes |
 | **CV/Syntax** | <ul><li>If using a named period, use standard vocabularies such as [LCSH](http://id.loc.gov/authorities/subjects.html) or [FAST](http://fast.oclc.org/searchfast/ ) whenever possible; consistently applied local vocabularies are acceptable</li><li>For dates or date ranges, prefer use of [EDTF](https://www.loc.gov/standards/datetime/)</li></ul> |
-| **Notes and Best Practices** | <ul><li>If qualified Dublin Core is not supported, map to dc:subject (see Subject); use dc:coverage only for geographic information</li><li>The field should describe the time period covered or represented by the resource’s content, not the date when the resource was created or published. See Date for guidance on describing the date or date range of a resource</li><li>Temporal topics may be a named period, date, or date range</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Notes and Best Practices** | <ul><li>If qualified Dublin Core is not supported, map to dc:subject (see [Subject](#subject)); use dc:coverage only for geographic information</li><li>The field should describe the time period covered or represented by the resource’s content, not the date when the resource was created or published. See [Date](#date) for guidance on describing the date or date range of a resource</li><li>Temporal topics may be a named period, date, or date range</li><li>Use a semicolon to separate multiple values</li></ul> |
 | **Examples** | <ul><li>Dust Bowl Era, 1931-1939</li><li>1958-07/1959-06</li></ul> |
 
 | PA Digital Label | Title |
@@ -492,10 +492,10 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Title |
 | **Repeatable** | No; if more than one Title is present, any instance after the first will map to Alternative |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Keep the title descriptive yet brief. The Description field may be used to provide more detail</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Descriptive and informative titles are preferred whenever possible (as opposed to things like "unknown" or an id number). Not all materials can or should be titled uniquely</li><li>If a formal title does not exist, create a contrived title that succinctly describes the item. Refer to content standards such as [DACS](https://github.com/saa-ts-dacs/dacs) and [RDA](https://www.rdatoolkit.org/) for guidance</li></ul> |
+| **Notes and Best Practices** | <ul><li>Keep the title descriptive yet brief. The [Description](#description) field may be used to provide more detail</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Descriptive and informative titles are preferred whenever possible (as opposed to things like "unknown" or an id number). Not all materials can or should be titled uniquely</li><li>If a formal title does not exist, create a contrived title that succinctly describes the item. Refer to content standards such as [DACS](https://github.com/saa-ts-dacs/dacs) and [RDA](https://www.rdatoolkit.org/) for guidance</li></ul> |
 | **Examples** | <ul><li>1025 South Fairhill Street</li><li>Swimsuit parade at Stanley Green's</li><li>Senator J. William Fulbright awarded honorary degree, 1983</li></ul> |
 
-| PA Digital Label | Type |
+| PA Digital Label | <a name="title">Type</a> |
 |--|--|
 | **Status** | Recommended |
 | **Description** | The nature or genre of the described resource |
@@ -505,7 +505,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Type |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Values from the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/) map to PA Digital’s Type field |
-| **Notes and Best Practices** | <ul><li>Assign the type Text to images of textual materials</li><li>Please see Format for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Notes and Best Practices** | <ul><li>Assign the type Text to images of textual materials</li><li>Please see [Format](#format) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
 | **Examples** | <ul><li>Text</li><li>Image</li><li>Physical Object</li><li>Sound</li><li>Moving Image</li></ul> |
 
 | PA Digital Label | URL |
