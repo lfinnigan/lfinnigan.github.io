@@ -242,7 +242,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | <ul><li>application/pdf</li><li>audio/mpeg</li><li>image/jpeg</li><li>image/jp2</li><li>image/tiff</li><li>video/mpeg</li><li>video/mp4</li></ul> |
 
 
-| PA Digital Label | <a name="format">Format</a> |
+| PA Digital Label | <a name="format"/>Format |
 |--|--|
 | **Status** | Recommended |
 | **Description** | Physical medium of the described resource |
@@ -252,7 +252,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Type |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [AAT](http://www.getty.edu/research/tools/vocabularies/aat) or [TGM](http://id.loc.gov/vocabulary/graphicMaterials); consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the [Type](#title) field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see [Type](#title) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the [Type](#type) field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see [Type](#type) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
 | **Examples** | <ul><li>Fire insurance maps</li><li>Zines</li></ul> |
 
 
@@ -326,7 +326,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | https://archives.philamuseum.org/jgj/JCC_B043_F001_001/cat-0003 |
 
 
-| PA Digital Label | <a name="place">Place</a> |
+| PA Digital Label | <a name="place"/>Place |
 |--|--|
 | **Status** | Recommended |
 | **Description** | Geographic location referenced or depicted by the described resource; captures its "aboutness" |
@@ -405,7 +405,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Examples** | <ul><li>Federal Highway Administration Office of Motor Carriers Register</li><li>Grants for International and Foreign Programs</li></ul> |
 
 
-| PA Digital Label | <a name="rights">Rights</a> |
+| PA Digital Label | <a name="rights"/>Rights |
 |--|--|
 | **Status** | A rights statement is required. This can be a uniform resource identifier (URI) from RightsStatements.org or Creative Commons, or a natural language statement |
 | **Description** | Information about rights held in and over the digitized resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Natural language statements map to PA Digital's Rights field upon ingest |
@@ -430,7 +430,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | If using simple Dublin Core, do not map this information to dc:rights |
 | **Examples** | <ul><li>University of Scranton</li></ul> |
 
-| PA Digital Label | <a name="rightsU">Rights URI</a> |
+| PA Digital Label | <a name="rightsU"/>Rights URI |
 |--|--|
 | **Status** | A rights statement is required. This can be a uniform resource identifier (URI) from RightsStatements.org/Creative Commons or a natural language statement |
 | **Description** | A standardized rights statement URI from RightsStatements.org or Creative Commons that conveys information about rights held in and over the digitized resource |
@@ -456,7 +456,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | Use a semicolon to separate multiple values |
 | **Examples** | <ul><li>Collection, Box 1, Folder 1</li><li>File A93-25 Folder 1</li></ul> |
 
-| PA Digital Label | <a name="subject">Subject</a> |
+| PA Digital Label | <a name="subject"/>Subject |
 |--|--|
 | **Status** | Recommended |
 | **Description** | The topic of the described resource |
@@ -469,7 +469,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Use uncoordinated subject headings when possible and enter geographic and format information in separate fields. See [Place](#place) and [Format](#format)</li><li>When subdividing a subject term, prefer one space between LCSH subjects and dashes (Term -- Term)</li><li>If using a geographic or form subdivision, provide a corresponding value in [Place](#place) or [Format](#format) respectively</li></ul> |
 | **Examples** | <ul><li>Coal miners -- Social conditions</li><li><pre><code>&#60;dc:subject&#62;Civil rights movements&#60;/dc:subject> AND &#60;dc:coverage>Philadelphia (Pa.)&#60;/dc:coverage&#62;</pre></code><br>Instead of: <pre><code>&#60;dc:subject&#62;Civil rights movements -- Pennsylvania -- Philadelphia&#60;/dc:subject&#62;</code></pre></li><li><pre><code>&#60;dc:subject&#62;Harlem Renaissance&#60;/dc:subject&#62; AND &#60;dc:type&#62;Maps&#60;/dc:type&#62;</pre></code><br>Instead of:<pre><code>&#60;dc:subject&#62;Harlem Renaissance -- Maps&#60;/dc:subject&#62;</pre></code></li></ul> |
 
-| PA Digital Label | <a name="temporal">Temporal Coverage</a> |
+| PA Digital Label | <a name="temporal"/>Temporal Coverage |
 |--|--|
 | **Status** | Optional |
 | **Description** | Temporal characteristics of the described resource |
@@ -495,7 +495,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Notes and Best Practices** | <ul><li>Keep the title descriptive yet brief. The [Description](#description) field may be used to provide more detail</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Descriptive and informative titles are preferred whenever possible (as opposed to things like "unknown" or an id number). Not all materials can or should be titled uniquely</li><li>If a formal title does not exist, create a contrived title that succinctly describes the item. Refer to content standards such as [DACS](https://github.com/saa-ts-dacs/dacs) and [RDA](https://www.rdatoolkit.org/) for guidance</li></ul> |
 | **Examples** | <ul><li>1025 South Fairhill Street</li><li>Swimsuit parade at Stanley Green's</li><li>Senator J. William Fulbright awarded honorary degree, 1983</li></ul> |
 
-| PA Digital Label | <a name="title">Type</a> |
+| PA Digital Label | <a name="type"/>Type |
 |--|--|
 | **Status** | Recommended |
 | **Description** | The nature or genre of the described resource |
