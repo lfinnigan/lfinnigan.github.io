@@ -28,36 +28,9 @@ Between 2015 and 2021, this project was funded in part by a grant from the Insti
 
 Questions or comments on these guidelines are welcome and may be sent to [info@padigital.org](mailto:info@padigital.org).
 
-
-<table>
-  <tr>
-   <td><p style="text-align: right">
-
-<img src="images/email.png" alt="alt_text" title="image_tooltip">
-<strong><a href="mailto:info@padigital.org">info@padigital.org</a></strong></p>
-
-   </td>
-   <td>
-
-<img src="images/web.png" alt="alt_text" title="image_tooltip">
-<strong><a href="http://www.padigital.org/">www.padigital.org</a></strong>
-   </td>
-   <td>
-
-<img src="images/twitter.png" alt="alt_text" title="image_tooltip">
-<strong><a href="https://twitter.com/PADigitalNews">@PADigitalNews</a></strong>
-   </td>
-  </tr>
-</table>
-
-
-
 # Table of Contents
 
-
 [TOC]
-
-
 
 # Introduction
 
@@ -89,13 +62,13 @@ Contributors to PA Digital should strive to provide shareable, quality metadata.
 
 * **Controlled vocabularies.** The use of widely-adopted vocabularies helps to better integrate records from other contributing institutions.
 
-In the spirit of shareable metadata, note that PA Digital and DPLA require that metadata (_but not digital content_) be licensed as [CC0](https://creativecommons.org/about/cc0) (“No rights reserved”). The following excerpt from _[The ­Digital Public Library of America Policy Statement on Metadata](https://pro.dp.la/hubs/metadata-application-profile)_ speaks to the importance of this policy in fulfilling DPLA’s mission and values: 
+In the spirit of shareable metadata, note that PA Digital and DPLA require that metadata (_but not digital content_) be licensed as [CC0](https://creativecommons.org/about/cc0) ("No rights reserved"). The following excerpt from _[The ­Digital Public Library of America Policy Statement on Metadata](https://pro.dp.la/hubs/metadata-application-profile)_ speaks to the importance of this policy in fulfilling DPLA’s mission and values: 
 
-_“The DPLA aims to make the cultural and scientific record available, free of charge, to all through databases of metadata. The DPLA, for this purpose, has undertaken the task of ingesting, indexing, enriching, and making available descriptive metadata and wishes to make such metadata widely available for reuse._
+_"The DPLA aims to make the cultural and scientific record available, free of charge, to all through databases of metadata. The DPLA, for this purpose, has undertaken the task of ingesting, indexing, enriching, and making available descriptive metadata and wishes to make such metadata widely available for reuse._
 
 _The DPLA wishes to promote innovation in the development of applications and tools that use and rely on this metadata. In order to foster such innovation, the DPLA is committed to ensuring such metadata is unencumbered by legal restrictions. This policy and statement on metadata contained in the DPLA’s databases reflects that commitment. To that same end, the DPLA believes this policy is in accord with the letter and spirit of United States copyright law and would be fully respected in a court of law._
 
-_The DPLA hopes that the content and resources in the library will be put to creative uses that educate, inform, and empower current and future generations.”_
+_The DPLA hopes that the content and resources in the library will be put to creative uses that educate, inform, and empower current and future generations."_
 
 
 # Wikimedia Commons
@@ -105,356 +78,461 @@ _The DPLA hopes that the content and resources in the library will be put to cre
 
 # Quick Reference: Mapping Recommendations for Dublin Core
 
-
-<table>
-  <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td><strong>PA Digital Status</strong>
-   </td>
-   <td><strong>Qualified DC Element</strong>
-   </td>
-   <td><strong>Simple DC Element</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Alternative Title
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:alternative
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Contributor
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:contributor
-   </td>
-   <td>dc:contributor
-   </td>
-  </tr>
-  <tr>
-   <td>Collection Name
-   </td>
-   <td>Required or Derived**
-   </td>
-   <td>dcterms:isPartOf
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Contributing Institution
-   </td>
-   <td>Derived
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Creator
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:creator
-   </td>
-   <td>dc:creator
-   </td>
-  </tr>
-  <tr>
-   <td>Date
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:created
-   </td>
-   <td>dc:date
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:description
-   </td>
-   <td>dc:description
-   </td>
-  </tr>
-  <tr>
-   <td>Extent
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:extent
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>File Format
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:format
-   </td>
-   <td>dc:format
-   </td>
-  </tr>
-  <tr>
-   <td>Format
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:type
-   </td>
-   <td>dc:type
-   </td>
-  </tr>
-  <tr>
-   <td>Identifier
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:identifier
-   </td>
-   <td>dc:identifier
-   </td>
-  </tr>
-  <tr>
-   <td>IIIF Base URL
-   </td>
-   <td>Optional or Derived**
-   </td>
-   <td>dcterms:identifier
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>IIIF Manifest
-   </td>
-   <td>Optional or Derived**
-   </td>
-   <td>dcterms:isReferencedBy
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Intermediate Provider
-   </td>
-   <td>Derived
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>URL
-   </td>
-   <td>Required or Derived**
-   </td>
-   <td>dcterms:identifier
-   </td>
-   <td>dc:identifier
-   </td>
-  </tr>
-  <tr>
-   <td>Language
-   </td>
-   <td>Recommended for textual and spoken material
-   </td>
-   <td>dcterms:language
-   </td>
-   <td>dc:language
-   </td>
-  </tr>
-  <tr>
-   <td>Media Master
-   </td>
-   <td>Optional or Derived**
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Place
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:spatial
-   </td>
-   <td>dc:coverage
-   </td>
-  </tr>
-  <tr>
-   <td>Preview
-   </td>
-   <td>Strongly recommended or Derived**
-   </td>
-   <td>dcterms:identifier
-   </td>
-   <td>dc:identifier
-   </td>
-  </tr>
-  <tr>
-   <td>Publisher
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:publisher
-   </td>
-   <td>dc:publisher
-   </td>
-  </tr>
-  <tr>
-   <td>Relation
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:relation
-   </td>
-   <td>dc:relation
-   </td>
-  </tr>
-  <tr>
-   <td>Replaced By
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:isReplacedBy
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Replaces
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:replaces
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Rights
-   </td>
-   <td>Required (or Rights URI)
-   </td>
-   <td>dcterms:rights
-   </td>
-   <td>dc:rights
-   </td>
-  </tr>
-  <tr>
-   <td>Rights Holder
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:rightsholder
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Source
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:source
-   </td>
-   <td>dc:source
-   </td>
-  </tr>
-  <tr>
-   <td>Rights URI
-   </td>
-   <td>Required (or Rights)
-   </td>
-   <td>dcterms:rights
-   </td>
-   <td>dc:rights
-   </td>
-  </tr>
-  <tr>
-   <td>Subject
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:subject
-   </td>
-   <td>dc:subject
-   </td>
-  </tr>
-  <tr>
-   <td>Temporal Coverage
-   </td>
-   <td>Optional
-   </td>
-   <td>dcterms:temporal
-   </td>
-   <td>dc:subject
-   </td>
-  </tr>
-  <tr>
-   <td>Title
-   </td>
-   <td>Required
-   </td>
-   <td>dcterms:title
-   </td>
-   <td>dc:title
-   </td>
-  </tr>
-  <tr>
-   <td>Type
-   </td>
-   <td>Recommended
-   </td>
-   <td>dcterms:type
-   </td>
-   <td>dc:type
-   </td>
-  </tr>
-</table>
-
+| PA Digital Label | PA Digital Status | Qualified DC Element | Simple DC Element |
+|--|--|--|--|
+| Alternative Title | Optional | dcterms:alternative |  |
+| Contributor | Optional | dcterms:contributor | dc:contributor |
+| Collection Name | Required or Derived** | dcterms:isPartOf |  |
+| Contributing Institution | Derived |  |  |
+| Creator | Recommended | dcterms:creator | dc:creator |
+| Date | Recommended | dcterms:created | dc:date |
+| Description | Recommended | dcterms:description | dc:description |
+| Extent | Optional | dcterms:extent |  |
+| File Format | Optional | dcterms:format | dc:format |
+| Format | Recommended | dcterms:type | dc:type |
+| Identifier | Optional | dcterms:identifier | dc:identifier |
+| IIIF Base URL | Optional or Derived** | dcterms:identifier |  |
+| IIIF Manifest | Optional or Derived** | dcterms:isReferencedBy |  |
+| Intermediate Provider | Derived |  |  |
+| URL | Required or Derived** | dcterms:identifier | dc:identifier |
+| Language | Recommended for textual and spoken material | dcterms:language | dc:language |
+| Media Master | Optional or Derived** |  |  |
+| Place | Recommended | dcterms:spatial | dc:coverage |
+| Preview | Strongly recommended or Derived** | dcterms:identifier | dc:identifier |
+| Publisher | Optional | dcterms:publisher | dc:publisher |
+| Relation | Optional | dcterms:relation | dc:relation |
+| Replaced By | Optional | dcterms:isReplacedBy |  |
+| Replaces | Optional | dcterms:replaces |  |
+| Rights | Required (or Rights URI) | dcterms:rights | dc:rights |
+| Rights Holder | Optional | dcterms:rightsholder |  |
+| Source | Optional | dcterms:source | dc:source |
+| Rights URI | Required (or Rights) | dcterms:rights | dc:rights |
+| Subject | Recommended | dcterms:subject | dc:subject |
+| Temporal Coverage | Optional | dcterms:temporal | dc:subject |
+| Title | Required | dcterms:title | dc:title |
+| Type | Recommended | dcterms:type | dc:type |
 
 *_To see mapping changes from PA Digital Guidelines v1.2 (August 2018), see [UPDATE THIS LINK](#heading=h.l01zhzdf43zj)_
 
-*_Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output._
+**_Values for some fields may be derived from metadata elsewhere in the record. For example, an object or thumbnail URL may be derived from a consistently formatted identifier present in the record, or a collection name may be derived from the setSpec value in the OAI-PMH output._
 
 # Guidelines Key
 
 Fields are arranged alphabetically by PA Digital label. Descriptors with no content are omitted. 
 
+| **PA Digital Label** | Field label used by PA Digital |
+|--|--|
+| **Status** | Identifies whether a field is required, strongly recommended, recommended, optional, or derived |
+| **Description** | A description of the field |
+| **Qualified DC Element** | The qualified Dublin Core term to which a field should map |
+| **Simple DC Element** | The simple Dublin Core element to which a field should map if qualified term is unavailable 
+| **CONTENTdm Mapping** | The DC Map value in Field properties |
+| **CSV Header** | Recommended header value for delimited text files |
+| **Repeatable** | Whether a field may be repeated |
+| **CV/Syntax** | Recommended controlled vocabularies or syntax |
+| **Notes and Best Practices** | Includes recommendations for a field’s content, application, and punctuation |
+| **Examples** | Examples that illustrate best practices |
 
+# Fields
+| PA Digital Label | Alternative Title |
+|--|--|
+| **Status** | Optional |
+| **Description** | Any alternative title of the described resource including abbreviations and translations |
+| **Qualified DC Element** | dcterms:alternative |
+| **CONTENTdm Mapping** | Title-Alternative |
+| **CSV Header** | Alternative_Title |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Natural language |
+| **Notes and Best Practices** | <ul><li>Comparable to MARC variations of titles (such as alternative spellings)<li>May also be used for translations of titles in foreign languages<li>Avoid use of explanatory or qualifying symbols (e.g., brackets)<li>Where there are multiple Title fields, any instance after the first will map to Alternative Title</li></ul> |
+
+| PA Digital Label | Collection Name |
+|--|--|
+| **Status** | Derived (or Required, see below) |
+| **Description** | Collection or aggregation of which described resource is a part |
+| **Qualified DC Element** | dcterms:isPartOf |
+| **CONTENTdm Mapping** | Relation-Is Part Of |
+| **CSV Header** | Collection_Name |
+| **Repeatable** | Yes |
+| **Notes and Best Practices** | <ul><li>Whenever possible, PA Digital will use the setSpec, or collection identifier, value in the OAI-PMH output to generate a human-readable, normalized Collection Name<li>SetSpec values must be valid; see the pattern requirements under setSpecType in the [OAI-PMH specifications](http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd)<li>Institutions that wish to map collection names from their metadata rather than the setSpec should inform PA Digital during the onboarding process</li></ul> |
+
+| PA Digital Label | Contributing Institution |
+|--|--|
+| **Status** | Derived or PA Digital supplied |
+| **Description** | The organization that supplies metadata to PA Digital |
+| **CSV Header** | Data_Provider |
+| **Repeatable** | Yes |
+| **Notes and Best Practices** | <ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in a record; examples include identifiers and object URLs<li>Values may also be supplied by PA Digital during the ingestion process. Institutions should specify during onboarding the desired value(s) for this field<li>Under certain circumstances, Contributing Institution values may be mapped from metadata; names should be normalized, consistent, and identifiable</li></ul> |
+
+| PA Digital Label | Contributor |
+|--|--|
+| **Status** | Optional |
+| **Description** | An entity responsible for making secondary contributions to the described resource. Examples of a Contributor include a person, an organization, or a service |
+| **Qualified DC Element** | dcterms:contributor |
+| **Simple DC Element** | dc:contributor | 
+| **CONTENTdm Mapping** | Contributor |
+| **CSV Header** | Contributor |
+| **Repeatable** | Yes |
+| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul> |
+| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Contributor is the interviewer<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul> |
+| **Examples** | <ul><li>Beck, James M. (James Montgomery), 1861-1936<li>United States. Army Map Service</li></ul> |
+
+| PA Digital Label | Creator |
+|--|--|
+| **Status** | Recommended |
+| **Description** | An entity primarily responsible for making the described resource. Examples of a Creator include a person, an organization, or a service |
+| **Qualified DC Element** | dcterms:creator |
+| **Simple DC Element** | dc:creator | 
+| **CONTENTdm Mapping** | Creator |
+| **CSV Header** | Creator |
+| **Repeatable** | Yes |
+| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul> |
+| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Creator is the interviewee<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul> |
+| **Examples** | <ul><li>Littell, Franklin H. (Franklin Hamlin), 1917-2009<li>Catholic Church. Archdiocese of Philadelphia (Pa.)</li></ul> |
+
+| PA Digital Label | Date |
+|--|--|
+| **Status** | Recommended |
+| **Description** | Date of creation of the described resource |
+| **Qualified DC Element** | dcterms:date |
+| **Simple DC Element** | dc:date | 
+| **CONTENTdm Mapping** | Date |
+| **CSV Header** | Date |
+| **Repeatable** | Yes |
+| **CV/Syntax** | <ul><li>Prefer use of [EDTF](https://www.loc.gov/standards/datetime/) for both known and uncertain dates<li>DPLA can parse many types and formats of dates. Please refer to their [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for examples |
+| **Notes and Best Practices** | <ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see Temporal Coverage<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul> |
+| **Examples** | <ul><li>Known date</li><p>1999<br>1999-05<br>1999-05-01<br><li>Uncertain date</li><p>1999?<br>199u<br>1999-05?<br>1999-05-01?<br><li>Approximate date</li><p>1999&#126;<br>1999-05&#126;<br>1999-05-01&#126;<br><li>Date range</li><p>1992/1995<br>1990-02-08/2017-03-09<br>1984/2004-06&#126;<br><li>Acceptable non-EDTF values</li><p>circa 1999<br>ca. 1999<br>approximately 1999<br>1992-1995</ul> |
+
+| PA Digital Label | Description |
+|--|--|
+| **Status** | Recommended |
+| **Description** | A free text account of the described resource that succinctly captures its "aboutness" |
+| **Qualified DC Element** | dcterms:description |
+| **Simple DC Element** | dc:description | 
+| **CONTENTdm Mapping** | Description |
+| **CSV Header** | Description |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Natural language; semicolons may be used as punctuation |
+| **Notes and Best Practices** | <ul><li>Description at the object-level is highly preferred</li><li>Contributing institutions should consider the utility of the Description field in the DPLA portal as a rich source of keywords for discovery</li><li>Do not map fields with OCR or full-text transcription into the Description field</li><li>Revise potentially harmful content descriptions with more respectful terminology</li></ul> |
+| **Examples** | <ul><li>Program dated February 14, 1943 for a lecture titled "This Year of Our Lord," given by Fordham University President Robert I. Gannon, S.J. at the Hotel Casey in Scranton, Pennsylvania. Gannon's lecture was part of the University of Scranton Lecture series. The program also advertises the next lecture in the series, a talk on "Christendom and the Coming Peace" by Fordham University professor Gerald Groveland Walsh, S.J. scheduled for March 14, 1943. 4 pages.</li><li>Mummer's Parade on New Year's Day. South Broad Street, South Philadelphia, PA.</li><li>Oral history recorded December 23, 1981 and May 20, 1982 in Newark, N.J. and Rochester, N.Y.</ul> |
+
+| PA Digital Label | Extent |
+|--|--|
+| **Status** | Optional |
+| **Description** | The size or duration of the described resource. Examples for print materials include number of pages, a specification of length, width, and breadth, or for audio-visual materials, a time period of duration in hours, minutes, and seconds |
+| **Qualified DC Element** | dcterms:extent | 
+| **CONTENTdm Mapping** | Format-Extent |
+| **CSV Header** | Extent |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Natural language; semicolons may be used as punctuation |
+| **Notes and Best Practices** | <ul><li>Recommend use of a content standard such as [RDA](https://www.loc.gov/aba/rda/), [CCO](http://vraweb.org/resources/cataloging-cultural-objects/), or [DCRMS](http://rbms.info/dcrm/dcrms/) when applicable</li><li>Use a semicolon to separate multiple values</li></li>For dimensions, include units. Spell out abbreviations for maximum clarity</li><li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary</li></ul> |
+| **Examples** | <ul><li>4 7/8 x 8 3/16 inches</li><li>1 map on 13 sheets</li><li>00:14:21</li> |
+
+| PA Digital Label | File Format |
+|--|--|
+| **Status** | Optional |
+| **Description** | The file format of the digital object |
+| **Qualified DC Element** | dcterms:format |
+| **Simple DC Element** | dc:format | 
+| **CONTENTdm Mapping** | Format |
+| **CSV Header** | Format |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Recommend use of [IANA Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
+| **Notes and Best Practices** | <ul><li>Entries include a media type and subtype, separated with a slash</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Examples** | <ul><li>application/pdf</li><li>audio/mpeg</li><li>image/jpeg</li><li>image/jp2</li><li>image/tiff</li><li>video/mpeg</li><li>video/mp4</li></ul> |
+
+
+| PA Digital Label | Format |
+|--|--|
+| **Status** | Recommended |
+| **Description** | Physical medium of the described resource |
+| **Qualified DC Element** | dcterms:type |
+| **Simple DC Element** | dc:type | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** | Type |
+| **Repeatable** | Type |
+| **CV/Syntax** | Use standard vocabularies such as [AAT](http://www.getty.edu/research/tools/vocabularies/aat) or [TGM](http://id.loc.gov/vocabulary/graphicMaterials); consistently applied local vocabularies are acceptable |
+| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the Type field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see Type for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
+| **Examples** | <ul><li>Fire insurance maps</li><li>Zines</li></ul> |
+
+
+| PA Digital Label | Identifier |
+|--|--|
+| **Status** | Derived. PA Digital does not map local record identifiers, but generates its own based on metadata elsewhere in the record. Best practices indicated here are offered as a resource |
+| **Description** | An unambiguous reference to the described resource within a given context |
+| **Qualified DC Element** | dcterms:identifier |
+| **Simple DC Element** | dc:identifier | 
+| **CONTENTdm Mapping** | Identifier |
+| **CSV Header** | Identifier |
+| **Repeatable** | No |
+| **CV/Syntax** | Recommend alphanumeric strings only with no spaces or special characters such as “ @ “, “ # “, “ $ “, “ % “, “ &“, “ * “, “ ’ “, “ . “ |
+| **Notes and Best Practices** | Recommended best practice is to uniquely identify the resource within an institution’s collections by means of a string conforming to a formal identification system |
+| **Examples** | <ul><li>P441110B</li><li>HPHWPZ201404000165</li><li>1999-002_006</li></ul> |
+
+| PA Digital Label | IIIF Base URL |
+|--|--|
+| **Status** | Optional or Derived |
+| **Description** | The base URL required to access a IIIF service for the digital resource |
+| **Qualified DC Element** | dcterms:identifier |
+| **CSV Header** | IIIF_Base |
+| **Repeatable** | No |
+| **Notes and Best Practices** | <ul><li>Must resolve to a IIIF service</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Base URL may be derived from the URL for the digital object</li></ul> |
+| **Examples** | <ul><li>https://digital.library.temple.edu/digital/iiif/p245801coll0/4024/</li><li>https://media.philamuseum.org/image/JGJ_B008_F009_001_001/</li></ul> |
+
+
+| PA Digital Label | IIIF Manifest |
+|--|--|
+| **Status** | Optional or Derived |
+| **Description** | A URI for the manifest of a IIIF resource; may be used to support inclusion of objects in Wikimedia Commons |
+| **Qualified DC Element** | dcterms:isReferencedBy |
+| **CSV Header** | IIIF_Man |
+| **Repeatable** | No |
+| **Notes and Best Practices** | <ul><li>Must resolve to a IIIF manifest</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Manifest URI may be derived from the URL for the digital object</li></ul> |
+| **Examples** | <ul><li>https://digital.library.temple.edu/iiif/info/p245801coll0/4024/manifest.json</li><li>https://digital.library.villanova.edu/Item/vudl:92879/Manifest |
+
+
+| PA Digital Label | Intermediate Provider |
+|--|--|
+| **Status** | Derived or PA Digital supplied |
+| **Description** | An intermediate organization that selects, collates, curates, or provides a repository for data from a contributing institution or institutions that is then aggregated from a single point by PA Digital |
+| **CSV Header** | Intermediate_Provider |
+| **Repeatable** | No |
+| **Notes and Best Practices** | <ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record; examples include identifiers and object URLs</li><li>Values may also be supplied by PA Digital during the ingestion process. Intermediate organizations should specify during onboarding the desired value for this field</li></ul> |
+| **Examples** | <ul><li>POWER Library PA Photos and Documents</li><li>Historic Pittsburgh</li></ul> |
+
+
+| PA Digital Label | Language |
+|--|--|
+| **Status** | Recommended for textual and spoken material |
+| **Description** | Language expressed in a resource that contains text or speech |
+| **Qualified DC Element** | dcterms:language |
+| **Simple DC Element** | dc:language | 
+| **CONTENTdm Mapping** | Language |
+| **CSV Header** | Language |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Use standard or consistently applied local vocabularies; [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data ) is preferred |
+| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Do not use for non-linguistic content such as images containing no text</li> |
+| **Examples** | <ul><li>eng</li><li>fre</li><li>afr ; afu ; eng</li></ul> |
+
+
+| PA Digital Label | Media Master |
+|--|--|
+| **Status** | Optional |
+| **Description** | URL that points to a downloadable version of the digital object; used to support inclusion of non-IIIF media objects in Wikimedia Commons |
+| **Qualified DC Element** | _See notes below_ |
+| **CSV Header** | Media_Master |
+| **Repeatable** | Yes |
+| **Notes and Best Practices** | <ul><li>Please contact PA Digital metadata specialists before implementing this field</li>Must resolve to a downloadable version of the digital object; thumbnails that represent the digital object for the purposes of providing a preview are not acceptable</li><li>Records for compound, multipage objects such as books should include a URL to each file associated with the object. Where these are not available via the ingestion process, a CSV supplement may be supplied</li></ul> |
+| **Examples** | https://archives.philamuseum.org/jgj/JCC_B043_F001_001/cat-0003 |
+
+
+| PA Digital Label | Place |
+|--|--|
+| **Status** | Recommended |
+| **Description** | Geographic location referenced or depicted by the described resource; captures its "aboutness" |
+| **Qualified DC Element** | dcterms:spatial |
+| **Simple DC Element** | dc:coverage | 
+| **CONTENTdm Mapping** | Coverage-Spatial |
+| **CSV Header** | Place |
+| **Repeatable** | Yes |
+| **CV/Syntax** | Use standard vocabularies such as [LCNAF](http://id.loc.gov/authorities/names.html), [TGN](http://www.getty.edu/vow/TGNSearchPage.jsp), [GeoNames](http://www.geonames.org/), or [FAST](http://fast.oclc.org/searchfast/) whenever possible; consistently applied local vocabularies are acceptable |
+| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>This field does not represent the physical location or address of the physical or digital repository where the original item or digital facsimile is held</li><li>Consistency when using hierarchical values is recommended (e.g., “Pittsburgh, Pennsylvania, United States of America”)</li><li>Addresses, latitude/longitude, or other forms of location markers may also be mapped to this field for the purposes of geolocation and/or digital mapping</li><li>For latitude/longitude, DPLA prefers latitude first, with the two coordinates separated by a comma, limited to whole numbers and decimals as opposed to degree-minutes-seconds (e.g., “6.703, 46.627”). If used, compass directions should appear after the number</li><li>See DPLA’s [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for more information</li></ul> |
+| **Examples** | <ul><li>Pittsburgh (Pa.)</li><li>Allegheny County (Pa.)</li><li>Harrison (Allegheny County, Pa. : Township)</li><li>40.85N, 77.84W</li><li>40.85, -77.84</li></ul> |
+
+
+| PA Digital Label | Preview |
+|--|--|
+| **Status** | Strongly recommended or Derived |
+| **Description** | The URL of a thumbnail, extract, or other type of resource representing the digital object for the purposes of providing a preview |
+| **Qualified DC Element** | dcterms:identifier |
+| **Simple DC Element** | dc:identifier | 
+| **CSV Header** | Preview |
+| **Repeatable** | No |
+| **Notes and Best Practices** | <ul><li>The URL must resolve to a preview of the digital object</li><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record</li></ul> |
+| **Examples** | http://historicpittsburgh.org/islandora/object/pitt%3A715.164812.CP/datastream/TN/view/Roadway.jpg |
+
+
+| PA Digital Label | Publisher |
+|--|--|
+| **Status** | Optional |
+| **Description** | An entity responsible for making the described, original resource available. Typically, this is a publishing house, a corporate body, a government agency, a university, or other organization |
+| **Qualified DC Element** | dcterms:publisher |
+| **Simple DC Element** | dc:publisher | 
+| **CONTENTdm Mapping** | Publisher |
+| **CSV Header** | Publisher |
+| **Repeatable** | Yes |
+| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax; semicolons may be used as punctuation</li></ul> |
+| **Notes and Best Practices** | <ul></li>Use this field for published materials such as books, magazines, and journals</li><li>Use a semicolon to separate multiple values</li><li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher</li><li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”</li><li>Not to be used for the entity responsible for digitizing or making the digital representation available</li></ul> |
+| **Examples** | <ul><li>Rand McNally and Company</li><li>Philadelphia Evening Bulletin</li></ul> |
+
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+
+| PA Digital Label |  |
+|--|--|
+| **Status** |  |
+| **Description** |  |
+| **Qualified DC Element** |  |
+| **Simple DC Element** |  | 
+| **CONTENTdm Mapping** |  |
+| **CSV Header** |  |
+| **Repeatable** |  |
+| **CV/Syntax** |  |
+| **Notes and Best Practices** |  |
+| **Examples** |  |
+<!---
 <table>
   <tr>
-   <td><strong>PA Digital Label</strong>
-   </td>
-   <td>Field label used by PA Digital
-   </td>
+   <td><strong>PA Digital Label</strong></td>
+   <td>Field label used by PA Digital</td>
   </tr>
   <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>Identifies whether a field is required, strongly recommended, recommended, optional, or derived
-   </td>
+   <td><strong>Status</strong></td>
+   <td>Identifies whether a field is required, strongly recommended, recommended, optional, or derived</td>
   </tr>
   <tr>
-   <td><strong>Description</strong>
-   </td>
+   <td><strong>Description</strong></td>
    <td>A description of the field
    </td>
   </tr>
@@ -507,11 +585,6 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    </td>
   </tr>
 </table>
-
-
-
-# 
-
 
 # Fields
 
@@ -697,9 +770,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    <td>
     <ul>
         <li>Use a semicolon to separate multiple values
-        <li>Avoid use of placeholder values (e.g., “Unknown”)
+        <li>Avoid use of placeholder values (e.g., "Unknown")
         <li>For oral histories, Contributor is the interviewer
-        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
+        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"
         </li>
     </ul>
    </td>
@@ -765,9 +838,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    <td>
     <ul>
         <li>Use a semicolon to separate multiple values
-        <li>Avoid use of placeholder values (e.g., “Unknown”)
+        <li>Avoid use of placeholder values (e.g., "Unknown")
         <li>For oral histories, Creator is the interviewee
-        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer “Smith, John, 1880-1960” not “Smith, John, 1880-1960, publisher”
+        <li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"
         </li>
     </ul>
    </td>
@@ -833,8 +906,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
    <td><strong>Notes and Best Practices</strong></td>
    <td>
     <ul>
-        <li>Avoid use of placeholder values (e.g., “Unknown”, “n.d.”). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank
-        <li>For guidance on dates or date ranges that reflect “aboutness” (for example, a memoir <em>about</em> the 1870s) please see 
+        <li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank
+        <li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir <em>about</em> the 1870s) please see 
         <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Temporal Coverage"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
         <a href="#heading=h.tso54ioou99r">Temporal Coverage</a>
         <li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date
@@ -1290,8 +1363,8 @@ Acceptable non-EDTF values
    <td>
 <ul>
 
-<li>Recommend alphanumeric strings only with no spaces or special characters such as “ @ “, “ # “, “ $ “, “ % “, “ &“,
-    “ * “, “ ’ “, “ . “
+<li>Recommend alphanumeric strings only with no spaces or special characters such as " @ ", " # ", " $ ", " % ", " &",
+    " * ", " ’ ", " . "
 </li>
 </ul>
    </td>
@@ -1765,7 +1838,7 @@ Acceptable non-EDTF values
   <tr>
    <td><strong>Description</strong>
    </td>
-   <td>Geographic location referenced or depicted by the described resource; captures its “aboutness”
+   <td>Geographic location referenced or depicted by the described resource; captures its "aboutness"
    </td>
   </tr>
   <tr>
@@ -1819,11 +1892,11 @@ Acceptable non-EDTF values
 
 <li>This field does not represent the physical location or address of the physical or digital repository where the original item or digital facsimile is held
 
-<li>Consistency when using hierarchical values is recommended (e.g., “Pittsburgh, Pennsylvania, United States of America”)
+<li>Consistency when using hierarchical values is recommended (e.g., "Pittsburgh, Pennsylvania, United States of America")
 
 <li>Addresses, latitude/longitude, or other forms of location markers may also be mapped to this field for the purposes of geolocation and/or digital mapping
 
-<li>For latitude/longitude, DPLA prefers latitude first, with the two coordinates separated by a comma, limited to whole numbers and decimals as opposed to degree-minutes-seconds (e.g., “6.703, 46.627”). If used, compass directions should appear after the number
+<li>For latitude/longitude, DPLA prefers latitude first, with the two coordinates separated by a comma, limited to whole numbers and decimals as opposed to degree-minutes-seconds (e.g., "6.703, 46.627"). If used, compass directions should appear after the number
 
 <li>See DPLA’s <a href="https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing">Geographic and Temporal Guidelines</a> for more information 
 </li>
@@ -2003,9 +2076,9 @@ Acceptable non-EDTF values
 
 <li>Use a semicolon to separate multiple values
 
-<li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher
+<li>Avoid use of placeholder values (e.g., "Unknown", "s.n."); leave the field blank if a publisher cannot be accurately determined or if there is no publisher
 
-<li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”
+<li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer "Rand McNally and Company" not "Rand McNally and Company, publisher"
 
 <li>Not to be used for the entity responsible for digitizing or making the digital representation available
 </li>
