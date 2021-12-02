@@ -157,7 +157,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Alternative_Title |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language |
-| **Notes and Best Practices** | <ul><li>Comparable to MARC variations of titles (such as alternative spellings)</li><li>May also be used for translations of titles in foreign languages</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Where there are multiple Title fields, any instance after the first will map to Alternative Title</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Comparable to MARC variations of titles (such as alternative spellings)</li><li>May also be used for translations of titles in foreign languages</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Where there are multiple Title fields, any instance after the first will map to Alternative Title</li></ul>{:/} |
 
 <br>
 
@@ -169,7 +169,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Relation-Is Part Of |
 | **CSV Header** | Collection_Name |
 | **Repeatable** | Yes |
-| **Notes and Best Practices** | <ul><li>Whenever possible, PA Digital will use the setSpec, or collection identifier, value in the OAI-PMH output to generate a human-readable, normalized Collection Name<li>SetSpec values must be valid; see the pattern requirements under setSpecType in the [OAI-PMH specifications](http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd)<li>Institutions that wish to map collection names from their metadata rather than the setSpec should inform PA Digital during the onboarding process</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Whenever possible, PA Digital will use the setSpec, or collection identifier, value in the OAI-PMH output to generate a human-readable, normalized Collection Name<li>SetSpec values must be valid; see the pattern requirements under setSpecType in the [OAI-PMH specifications](http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd)<li>Institutions that wish to map collection names from their metadata rather than the setSpec should inform PA Digital during the onboarding process</li></ul>{:/} |
 
 <br>
 
@@ -179,7 +179,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Description** | The organization that supplies metadata to PA Digital |
 | **CSV Header** | Data_Provider |
 | **Repeatable** | Yes |
-| **Notes and Best Practices** | <ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in a record; examples include identifiers and object URLs<li>Values may also be supplied by PA Digital during the ingestion process. Institutions should specify during onboarding the desired value(s) for this field<li>Under certain circumstances, Contributing Institution values may be mapped from metadata; names should be normalized, consistent, and identifiable</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in a record; examples include identifiers and object URLs<li>Values may also be supplied by PA Digital during the ingestion process. Institutions should specify during onboarding the desired value(s) for this field<li>Under certain circumstances, Contributing Institution values may be mapped from metadata; names should be normalized, consistent, and identifiable</li></ul>{:/} |
 
 <br>
 
@@ -192,9 +192,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Contributor |
 | **CSV Header** | Contributor |
 | **Repeatable** | Yes |
-| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul> |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Contributor is the interviewer<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul> |
-| **Examples** | <ul><li>Beck, James M. (James Montgomery), 1861-1936<li>United States. Army Map Service</li></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul>{:/} |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Contributor is the interviewer<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Beck, James M. (James Montgomery), 1861-1936<li>United States. Army Map Service</li></ul>{:/} |
 
 <br>
 
@@ -207,9 +207,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Creator |
 | **CSV Header** | Creator |
 | **Repeatable** | Yes |
-| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul> |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Creator is the interviewee<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul> |
-| **Examples** | <ul><li>Littell, Franklin H. (Franklin Hamlin), 1917-2009<li>Catholic Church. Archdiocese of Philadelphia (Pa.)</li></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/), [VIAF](https://viaf.org/), or [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) whenever possible; consistently applied local vocabularies are acceptable<li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul>{:/} |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values<li>Avoid use of placeholder values (e.g., "Unknown")<li>For oral histories, Creator is the interviewee<li>Use name only without indication of role except in cases where a person’s role is included in an authorized form. For example, prefer "Smith, John, 1880-1960" not "Smith, John, 1880-1960, publisher"</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Littell, Franklin H. (Franklin Hamlin), 1917-2009<li>Catholic Church. Archdiocese of Philadelphia (Pa.)</li></ul>{:/} |
 
 <br>
 
@@ -222,9 +222,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Date |
 | **CSV Header** | Date |
 | **Repeatable** | Yes |
-| **CV/Syntax** | <ul><li>Prefer use of [EDTF](https://www.loc.gov/standards/datetime/) for both known and uncertain dates<li>DPLA can parse many types and formats of dates. Please refer to their [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for examples |
-| **Notes and Best Practices** | <ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see [Temporal Coverage](#temporal)<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul> |
-| **Examples** | <ul><li>Known date</li><ul><li>1999</li><li>1999-05</li><li>1999-05-01</li></ul><li>Uncertain date</li><ul><li>1999?</li><li>199u</li><li>1999-05?</li><li>1999-05-01?</li></ul><li>Approximate date</li><ul><li>1999&#126;</li><li>1999-05&#126;</li><li>1999-05-01&#126;</li></ul><li>Date range</li><ul><li>1992/1995</li><li>1990-02-08/2017-03-09</li><li>1984/2004-06&#126;</li></ul><li>Acceptable non-EDTF values</li><ul><li>circa 1999</li><li>ca. 1999</li><li>approximately 1999</li><li>1992-1995</ul></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Prefer use of [EDTF](https://www.loc.gov/standards/datetime/) for both known and uncertain dates<li>DPLA can parse many types and formats of dates. Please refer to their [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for examples |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see [Temporal Coverage](#temporal)<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Known date</li><ul><li>1999</li><li>1999-05</li><li>1999-05-01</li></ul><li>Uncertain date</li><ul><li>1999?</li><li>199u</li><li>1999-05?</li><li>1999-05-01?</li></ul><li>Approximate date</li><ul><li>1999&#126;</li><li>1999-05&#126;</li><li>1999-05-01&#126;</li></ul><li>Date range</li><ul><li>1992/1995</li><li>1990-02-08/2017-03-09</li><li>1984/2004-06&#126;</li></ul><li>Acceptable non-EDTF values</li><ul><li>circa 1999</li><li>ca. 1999</li><li>approximately 1999</li><li>1992-1995</ul></ul>{:/} |
 
 <br>
 
@@ -238,8 +238,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Description |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Description at the object-level is highly preferred</li><li>Contributing institutions should consider the utility of the Description field in the DPLA portal as a rich source of keywords for discovery</li><li>Do not map fields with OCR or full-text transcription into the Description field</li><li>Revise potentially harmful content descriptions with more respectful terminology</li></ul> |
-| **Examples** | <ul><li>Program dated February 14, 1943 for a lecture titled "This Year of Our Lord," given by Fordham University President Robert I. Gannon, S.J. at the Hotel Casey in Scranton, Pennsylvania. Gannon's lecture was part of the University of Scranton Lecture series. The program also advertises the next lecture in the series, a talk on "Christendom and the Coming Peace" by Fordham University professor Gerald Groveland Walsh, S.J. scheduled for March 14, 1943. 4 pages.</li><li>Mummer's Parade on New Year's Day. South Broad Street, South Philadelphia, PA.</li><li>Oral history recorded December 23, 1981 and May 20, 1982 in Newark, N.J. and Rochester, N.Y.</ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Description at the object-level is highly preferred</li><li>Contributing institutions should consider the utility of the Description field in the DPLA portal as a rich source of keywords for discovery</li><li>Do not map fields with OCR or full-text transcription into the Description field</li><li>Revise potentially harmful content descriptions with more respectful terminology</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Program dated February 14, 1943 for a lecture titled "This Year of Our Lord," given by Fordham University President Robert I. Gannon, S.J. at the Hotel Casey in Scranton, Pennsylvania. Gannon's lecture was part of the University of Scranton Lecture series. The program also advertises the next lecture in the series, a talk on "Christendom and the Coming Peace" by Fordham University professor Gerald Groveland Walsh, S.J. scheduled for March 14, 1943. 4 pages.</li><li>Mummer's Parade on New Year's Day. South Broad Street, South Philadelphia, PA.</li><li>Oral history recorded December 23, 1981 and May 20, 1982 in Newark, N.J. and Rochester, N.Y.</ul>{:/} |
 
 <br>
 
@@ -252,8 +252,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Extent |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Recommend use of a content standard such as [RDA](https://www.loc.gov/aba/rda/), [CCO](http://vraweb.org/resources/cataloging-cultural-objects/), or [DCRMS](http://rbms.info/dcrm/dcrms/) when applicable</li><li>Use a semicolon to separate multiple values</li></li>For dimensions, include units. Spell out abbreviations for maximum clarity</li><li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary</li></ul> |
-| **Examples** | <ul><li>4 7/8 x 8 3/16 inches</li><li>1 map on 13 sheets</li><li>00:14:21</li> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Recommend use of a content standard such as [RDA](https://www.loc.gov/aba/rda/), [CCO](http://vraweb.org/resources/cataloging-cultural-objects/), or [DCRMS](http://rbms.info/dcrm/dcrms/) when applicable</li><li>Use a semicolon to separate multiple values</li></li>For dimensions, include units. Spell out abbreviations for maximum clarity</li><li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>4 7/8 x 8 3/16 inches</li><li>1 map on 13 sheets</li><li>00:14:21</li> |
 
 <br>
 
@@ -267,8 +267,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Format |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Recommend use of [IANA Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml) |
-| **Notes and Best Practices** | <ul><li>Entries include a media type and subtype, separated with a slash</li><li>Use a semicolon to separate multiple values</li></ul> |
-| **Examples** | <ul><li>application/pdf</li><li>audio/mpeg</li><li>image/jpeg</li><li>image/jp2</li><li>image/tiff</li><li>video/mpeg</li><li>video/mp4</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Entries include a media type and subtype, separated with a slash</li><li>Use a semicolon to separate multiple values</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>application/pdf</li><li>audio/mpeg</li><li>image/jpeg</li><li>image/jp2</li><li>image/tiff</li><li>video/mpeg</li><li>video/mp4</li></ul>{:/} |
 
 <br>
 
@@ -282,8 +282,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Type |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [AAT](http://www.getty.edu/research/tools/vocabularies/aat) or [TGM](http://id.loc.gov/vocabulary/graphicMaterials); consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the [Type](#type) field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see [Type](#type) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
-| **Examples** | <ul><li>Fire insurance maps</li><li>Zines</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Format is a more granular description of an object’s type than what is possible with the DCMI vocabulary used in the [Type](#type) field</li><li>Values in an incoming Type field not found in the DCMI Type vocabulary will map to Format in PA Digital and DPLA. Please see [Type](#type) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Fire insurance maps</li><li>Zines</li></ul>{:/} |
 
 <br>
 
@@ -298,7 +298,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Repeatable** | No |
 | **CV/Syntax** | Recommend alphanumeric strings only with no spaces or special characters such as “ @ “, “ # “, “ $ “, " % “, “ &“, “ * “, “ ’ “, “ . “ |
 | **Notes and Best Practices** | Recommended best practice is to uniquely identify the resource within an institution’s collections by means of a string conforming to a formal identification system |
-| **Examples** | <ul><li>P441110B</li><li>HPHWPZ201404000165</li><li>1999-002_006</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>P441110B</li><li>HPHWPZ201404000165</li><li>1999-002_006</li></ul>{:/} |
 
 <br>
 
@@ -309,8 +309,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Qualified DC Element** | dcterms:identifier |
 | **CSV Header** | IIIF_Base |
 | **Repeatable** | No |
-| **Notes and Best Practices** | <ul><li>Must resolve to a IIIF service</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Base URL may be derived from the URL for the digital object</li></ul> |
-| **Examples** | <ul><li>https://digital.library.temple.edu/digital/iiif/p245801coll0/4024/</li><li>https://media.philamuseum.org/image/JGJ_B008_F009_001_001/</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Must resolve to a IIIF service</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Base URL may be derived from the URL for the digital object</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>https://digital.library.temple.edu/digital/iiif/p245801coll0/4024/</li><li>https://media.philamuseum.org/image/JGJ_B008_F009_001_001/</li></ul>{:/} |
 
 <br>
 
@@ -321,8 +321,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Qualified DC Element** | dcterms:isReferencedBy |
 | **CSV Header** | IIIF_Man |
 | **Repeatable** | No |
-| **Notes and Best Practices** | <ul><li>Must resolve to a IIIF manifest</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Manifest URI may be derived from the URL for the digital object</li></ul> |
-| **Examples** | <ul><li>https://digital.library.temple.edu/iiif/info/p245801coll0/4024/manifest.json</li><li>https://digital.library.villanova.edu/Item/vudl:92879/Manifest |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Must resolve to a IIIF manifest</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Manifest URI may be derived from the URL for the digital object</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>https://digital.library.temple.edu/iiif/info/p245801coll0/4024/manifest.json</li><li>https://digital.library.villanova.edu/Item/vudl:92879/Manifest |
 
 <br>
 
@@ -332,8 +332,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Description** | An intermediate organization that selects, collates, curates, or provides a repository for data from a contributing institution or institutions that is then aggregated from a single point by PA Digital |
 | **CSV Header** | Intermediate_Provider |
 | **Repeatable** | No |
-| **Notes and Best Practices** | <ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record; examples include identifiers and object URLs</li><li>Values may also be supplied by PA Digital during the ingestion process. Intermediate organizations should specify during onboarding the desired value for this field</li></ul> |
-| **Examples** | <ul><li>POWER Library PA Photos and Documents</li><li>Historic Pittsburgh</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record; examples include identifiers and object URLs</li><li>Values may also be supplied by PA Digital during the ingestion process. Intermediate organizations should specify during onboarding the desired value for this field</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>POWER Library PA Photos and Documents</li><li>Historic Pittsburgh</li></ul>{:/} |
 
 <br>
 
@@ -347,8 +347,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Language |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard or consistently applied local vocabularies; [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data ) is preferred |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Do not use for non-linguistic content such as images containing no text</li> |
-| **Examples** | <ul><li>eng</li><li>fre</li><li>afr ; afu ; eng</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values</li><li>Do not use for non-linguistic content such as images containing no text</li> |
+| **Examples** | {::nomarkdown}<ul><li>eng</li><li>fre</li><li>afr ; afu ; eng</li></ul>{:/} |
 
 <br>
 
@@ -359,7 +359,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Qualified DC Element** | _See notes below_ |
 | **CSV Header** | Media_Master |
 | **Repeatable** | Yes |
-| **Notes and Best Practices** | <ul><li>Please contact PA Digital metadata specialists before implementing this field</li>Must resolve to a downloadable version of the digital object; thumbnails that represent the digital object for the purposes of providing a preview are not acceptable</li><li>Records for compound, multipage objects such as books should include a URL to each file associated with the object. Where these are not available via the ingestion process, a CSV supplement may be supplied</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Please contact PA Digital metadata specialists before implementing this field</li>Must resolve to a downloadable version of the digital object; thumbnails that represent the digital object for the purposes of providing a preview are not acceptable</li><li>Records for compound, multipage objects such as books should include a URL to each file associated with the object. Where these are not available via the ingestion process, a CSV supplement may be supplied</li></ul>{:/} |
 | **Examples** | https://archives.philamuseum.org/jgj/JCC_B043_F001_001/cat-0003 |
 
 <br>
@@ -374,8 +374,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Place |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [LCNAF](http://id.loc.gov/authorities/names.html), [TGN](http://www.getty.edu/vow/TGNSearchPage.jsp), [GeoNames](http://www.geonames.org/), or [FAST](http://fast.oclc.org/searchfast/) whenever possible; consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>This field does not represent the physical location or address of the physical or digital repository where the original item or digital facsimile is held</li><li>Consistency when using hierarchical values is recommended (e.g., “Pittsburgh, Pennsylvania, United States of America”)</li><li>Addresses, latitude/longitude, or other forms of location markers may also be mapped to this field for the purposes of geolocation and/or digital mapping</li><li>For latitude/longitude, DPLA prefers latitude first, with the two coordinates separated by a comma, limited to whole numbers and decimals as opposed to degree-minutes-seconds (e.g., “6.703, 46.627”). If used, compass directions should appear after the number</li><li>See DPLA’s [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for more information</li></ul> |
-| **Examples** | <ul><li>Pittsburgh (Pa.)</li><li>Allegheny County (Pa.)</li><li>Harrison (Allegheny County, Pa. : Township)</li><li>40.85N, 77.84W</li><li>40.85, -77.84</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values</li><li>This field does not represent the physical location or address of the physical or digital repository where the original item or digital facsimile is held</li><li>Consistency when using hierarchical values is recommended (e.g., “Pittsburgh, Pennsylvania, United States of America”)</li><li>Addresses, latitude/longitude, or other forms of location markers may also be mapped to this field for the purposes of geolocation and/or digital mapping</li><li>For latitude/longitude, DPLA prefers latitude first, with the two coordinates separated by a comma, limited to whole numbers and decimals as opposed to degree-minutes-seconds (e.g., “6.703, 46.627”). If used, compass directions should appear after the number</li><li>See DPLA’s [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for more information</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Pittsburgh (Pa.)</li><li>Allegheny County (Pa.)</li><li>Harrison (Allegheny County, Pa. : Township)</li><li>40.85N, 77.84W</li><li>40.85, -77.84</li></ul>{:/} |
 
 <br>
 
@@ -387,7 +387,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Simple DC Element** | dc:identifier | 
 | **CSV Header** | Preview |
 | **Repeatable** | No |
-| **Notes and Best Practices** | <ul><li>The URL must resolve to a preview of the digital object</li><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>The URL must resolve to a preview of the digital object</li><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record</li></ul>{:/} |
 | **Examples** | http://historicpittsburgh.org/islandora/object/pitt%3A715.164812.CP/datastream/TN/view/Roadway.jpg |
 
 <br>
@@ -401,9 +401,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Publisher |
 | **CSV Header** | Publisher |
 | **Repeatable** | Yes |
-| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax; semicolons may be used as punctuation</li></ul> |
-| **Notes and Best Practices** | <ul></li>Use this field for published materials such as books, magazines, and journals</li><li>Use a semicolon to separate multiple values</li><li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher</li><li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”</li><li>Not to be used for the entity responsible for digitizing or making the digital representation available</li></ul> |
-| **Examples** | <ul><li>Rand McNally and Company</li><li>Philadelphia Evening Bulletin</li></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax; semicolons may be used as punctuation</li></ul>{:/} |
+| **Notes and Best Practices** | <ul></li>Use this field for published materials such as books, magazines, and journals</li><li>Use a semicolon to separate multiple values</li><li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher</li><li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”</li><li>Not to be used for the entity responsible for digitizing or making the digital representation available</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Rand McNally and Company</li><li>Philadelphia Evening Bulletin</li></ul>{:/} |
 
 <br>
 
@@ -417,7 +417,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Relation |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Examples** | <ul><li>George D. McDowell Philadelphia Evening Bulletin Collection</li><li>The Zaner-Bloser, Inc. / Sonya Bloser Monroe Collection</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>George D. McDowell Philadelphia Evening Bulletin Collection</li><li>The Zaner-Bloser, Inc. / Sonya Bloser Monroe Collection</li></ul>{:/} |
 
 <br>
 
@@ -431,7 +431,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language |
 | **Notes and Best Practices** | This field is intended for series and title changes, for example government documents or serial publications and periodicals |
-| **Examples** | <ul><li>Federal Highway Administration Office of Motor Carrier and Highway Safety Register</li><li>Grants for Foreign and International Programs</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>Federal Highway Administration Office of Motor Carrier and Highway Safety Register</li><li>Grants for Foreign and International Programs</li></ul>{:/} |
 
 <br>
 
@@ -445,7 +445,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language |
 | **Notes and Best Practices** | This field is intended for series and title changes, for example government documents or serial publications and periodicals |
-| **Examples** | <ul><li>Federal Highway Administration Office of Motor Carriers Register</li><li>Grants for International and Foreign Programs</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>Federal Highway Administration Office of Motor Carriers Register</li><li>Grants for International and Foreign Programs</li></ul>{:/} |
 
 <br>
 
@@ -459,8 +459,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to [Rights URI](#rightsU)</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See [Rights URI](#rightsU) for guidance on using and mapping rights statement URIs |
-| **Examples** | <ul><li>Copyright status of the resource is unknown.</li><li>In the public domain and may be used without copyright restriction.</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to [Rights URI](#rightsU)</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See [Rights URI](#rightsU) for guidance on using and mapping rights statement URIs |
+| **Examples** | {::nomarkdown}<ul><li>Copyright status of the resource is unknown.</li><li>In the public domain and may be used without copyright restriction.</li></ul>{:/} |
 
 <br>
 
@@ -472,9 +472,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Rights-RightsHolder |
 | **CSV Header** | Rights_Holder |
 | **Repeatable** | No |
-| **CV/Syntax** | <ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax (Lastname, Firstname, YYYY-YYYY)</li></ul>{:/} |
 | **Notes and Best Practices** | If using simple Dublin Core, do not map this information to dc:rights |
-| **Examples** | <ul><li>University of Scranton</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>University of Scranton</li></ul>{:/} |
 
 <br>
 
@@ -488,8 +488,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights_URI |
 | **Repeatable** | No |
 | **CV/Syntax** | Must use URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/) |
-| **Notes and Best Practices** | <ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See [Rights](#rights) for guidance on using and mapping natural language rights statements |
-| **Examples** | <ul><li>http://rightsstatements.org/vocab/InC-RUU/1.0/</li><li>http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>https://creativecommons.org/publicdomain/zero/1.0/</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See [Rights](#rights) for guidance on using and mapping natural language rights statements |
+| **Examples** | {::nomarkdown}<ul><li>http://rightsstatements.org/vocab/InC-RUU/1.0/</li><li>http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>https://creativecommons.org/publicdomain/zero/1.0/</li></ul>{:/} |
 
 <br>
 
@@ -504,7 +504,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use a consistently applied, standardized syntax |
 | **Notes and Best Practices** | Use a semicolon to separate multiple values |
-| **Examples** | <ul><li>Collection, Box 1, Folder 1</li><li>File A93-25 Folder 1</li></ul> |
+| **Examples** | {::nomarkdown}<ul><li>Collection, Box 1, Folder 1</li><li>File A93-25 Folder 1</li></ul>{:/} |
 
 <br>
 
@@ -518,8 +518,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Subject |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard vocabularies such as [LCSH](http://id.loc.gov/authorities/subjects.html), [MeSH](https://meshb.nlm.nih.gov/search), [FAST](http://fast.oclc.org/searchfast/ ), or [LCNAF](http://id.loc.gov/authorities/names.html) whenever possible; consistently applied local vocabularies are acceptable |
-| **Notes and Best Practices** | <ul><li>Use a semicolon to separate multiple values</li><li>Use uncoordinated subject headings when possible and enter geographic and format information in separate fields. See [Place](#place) and [Format](#format)</li><li>When subdividing a subject term, prefer one space between LCSH subjects and dashes (Term -- Term)</li><li>If using a geographic or form subdivision, provide a corresponding value in [Place](#place) or [Format](#format) respectively</li></ul> |
-| **Examples** | <ul><li>Coal miners -- Social conditions</li><li>Use:<pre><code>&#60;dc:subject&#62;Civil rights movements&#60;/dc:subject> AND &#60;dc:coverage>Philadelphia (Pa.)&#60;/dc:coverage&#62;</pre></code><br>Instead of: <pre><code>&#60;dc:subject&#62;Civil rights movements -- Pennsylvania -- Philadelphia&#60;/dc:subject&#62;</code></pre></li><li>Use:<pre><code>&#60;dc:subject&#62;Harlem Renaissance&#60;/dc:subject&#62; AND &#60;dc:type&#62;Maps&#60;/dc:type&#62;</pre></code><br>Instead of:<pre><code>&#60;dc:subject&#62;Harlem Renaissance -- Maps&#60;/dc:subject&#62;</pre></code></li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values</li><li>Use uncoordinated subject headings when possible and enter geographic and format information in separate fields. See [Place](#place) and [Format](#format)</li><li>When subdividing a subject term, prefer one space between LCSH subjects and dashes (Term -- Term)</li><li>If using a geographic or form subdivision, provide a corresponding value in [Place](#place) or [Format](#format) respectively</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Coal miners -- Social conditions</li><li>Use:<pre><code>&#60;dc:subject&#62;Civil rights movements&#60;/dc:subject> AND &#60;dc:coverage>Philadelphia (Pa.)&#60;/dc:coverage&#62;</pre></code><br>Instead of: <pre><code>&#60;dc:subject&#62;Civil rights movements -- Pennsylvania -- Philadelphia&#60;/dc:subject&#62;</code></pre></li><li>Use:<pre><code>&#60;dc:subject&#62;Harlem Renaissance&#60;/dc:subject&#62; AND &#60;dc:type&#62;Maps&#60;/dc:type&#62;</pre></code><br>Instead of:<pre><code>&#60;dc:subject&#62;Harlem Renaissance -- Maps&#60;/dc:subject&#62;</pre></code></li></ul>{:/} |
 
 <br>
 
@@ -532,9 +532,9 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Coverage-Temporal |
 | **CSV Header** | Temporal |
 | **Repeatable** | Yes |
-| **CV/Syntax** | <ul><li>If using a named period, use standard vocabularies such as [LCSH](http://id.loc.gov/authorities/subjects.html) or [FAST](http://fast.oclc.org/searchfast/ ) whenever possible; consistently applied local vocabularies are acceptable</li><li>For dates or date ranges, prefer use of [EDTF](https://www.loc.gov/standards/datetime/)</li></ul> |
-| **Notes and Best Practices** | <ul><li>If qualified Dublin Core is not supported, map to dc:subject (see [Subject](#subject)); use dc:coverage only for geographic information</li><li>The field should describe the time period covered or represented by the resource’s content, not the date when the resource was created or published. See [Date](#date) for guidance on describing the date or date range of a resource</li><li>Temporal topics may be a named period, date, or date range</li><li>Use a semicolon to separate multiple values</li></ul> |
-| **Examples** | <ul><li>Dust Bowl Era, 1931-1939</li><li>1958-07/1959-06</li></ul> |
+| **CV/Syntax** | {::nomarkdown}<ul><li>If using a named period, use standard vocabularies such as [LCSH](http://id.loc.gov/authorities/subjects.html) or [FAST](http://fast.oclc.org/searchfast/ ) whenever possible; consistently applied local vocabularies are acceptable</li><li>For dates or date ranges, prefer use of [EDTF](https://www.loc.gov/standards/datetime/)</li></ul>{:/} |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>If qualified Dublin Core is not supported, map to dc:subject (see [Subject](#subject)); use dc:coverage only for geographic information</li><li>The field should describe the time period covered or represented by the resource’s content, not the date when the resource was created or published. See [Date](#date) for guidance on describing the date or date range of a resource</li><li>Temporal topics may be a named period, date, or date range</li><li>Use a semicolon to separate multiple values</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Dust Bowl Era, 1931-1939</li><li>1958-07/1959-06</li></ul>{:/} |
 
 <br>
 
@@ -548,8 +548,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Title |
 | **Repeatable** | No; if more than one Title is present, any instance after the first will map to Alternative |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | <ul><li>Keep the title descriptive yet brief. The [Description](#description) field may be used to provide more detail</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Descriptive and informative titles are preferred whenever possible (as opposed to things like "unknown" or an id number). Not all materials can or should be titled uniquely</li><li>If a formal title does not exist, create a contrived title that succinctly describes the item. Refer to content standards such as [DACS](https://github.com/saa-ts-dacs/dacs) and [RDA](https://www.rdatoolkit.org/) for guidance</li></ul> |
-| **Examples** | <ul><li>1025 South Fairhill Street</li><li>Swimsuit parade at Stanley Green's</li><li>Senator J. William Fulbright awarded honorary degree, 1983</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Keep the title descriptive yet brief. The [Description](#description) field may be used to provide more detail</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Descriptive and informative titles are preferred whenever possible (as opposed to things like "unknown" or an id number). Not all materials can or should be titled uniquely</li><li>If a formal title does not exist, create a contrived title that succinctly describes the item. Refer to content standards such as [DACS](https://github.com/saa-ts-dacs/dacs) and [RDA](https://www.rdatoolkit.org/) for guidance</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>1025 South Fairhill Street</li><li>Swimsuit parade at Stanley Green's</li><li>Senator J. William Fulbright awarded honorary degree, 1983</li></ul>{:/} |
 
 <br>
 
@@ -563,8 +563,8 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Type |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Values from the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/) map to PA Digital’s Type field |
-| **Notes and Best Practices** | <ul><li>Assign the type Text to images of textual materials</li><li>Please see [Format](#format) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul> |
-| **Examples** | <ul><li>Text</li><li>Image</li><li>Physical Object</li><li>Sound</li><li>Moving Image</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Assign the type Text to images of textual materials</li><li>Please see [Format](#format) for additional mappings from our Type field</li><li>Use a semicolon to separate multiple values</li></ul>{:/} |
+| **Examples** | {::nomarkdown}<ul><li>Text</li><li>Image</li><li>Physical Object</li><li>Sound</li><li>Moving Image</li></ul>{:/} |
 
 <br>
 
@@ -577,7 +577,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Identifier |
 | **CSV Header** | Identifier |
 | **Repeatable** | No |
-| **Notes and Best Practices** | <ul><li>The URL must resolve to a digital object and its associated metadata record</li><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record</li></ul> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>The URL must resolve to a digital object and its associated metadata record</li><li>Values for this field may be mapped from consistently formatted metadata elsewhere in the record</li></ul>{:/} |
 
 <br>
 
