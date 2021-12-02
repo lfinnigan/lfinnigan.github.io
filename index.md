@@ -148,7 +148,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 
 # Fields
 | PA Digital Label | Alternative Title |
-|------------------|-------------------|
+|--|--|
 | **Status** | Optional |
 | **Description** | Any alternative title of the described resource including abbreviations and translations |
 | **Qualified DC Element** | dcterms:alternative |
