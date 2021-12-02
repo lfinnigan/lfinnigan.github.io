@@ -48,7 +48,7 @@ Our aggregation software usesis based on the [Open Archives Initiative’s Proto
 
 * We recommend the use of qualified Dublin Core elements whenever possible. If your repository does not support the use of qualified Dublin Core, use the matching simple Dublin Core element recommended in these guidelines.
 * Unless otherwise specified, metadata should describe the **_original resource_**, not its digital representation.
-* Common delimiting characters such as pipes (" | ") and semicolons (" ; ") should be avoided; unless otherwise specified, PA Digital uses semicolons to delimit fields with multiple values.
+* Common delimiting characters such as pipes (" \| ") and semicolons (" ; ") should be avoided; unless otherwise specified, PA Digital uses semicolons to delimit fields with multiple values.
 * URIs that communicate rights held over the digitized resource, such as those from rightsstatements.org and creativecommons.org, are preferred; textual rights statements are acceptable.When using URIs, they should be added in addition to string values, not in place of them.
 
 We also accept metadata in MODS or MARC in XML, as well as in consistently structured, delimited text files (CSVs, TSVs, etc.).
