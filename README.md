@@ -222,7 +222,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CONTENTdm Mapping** | Date |
 | **CSV Header** | Date |
 | **Repeatable** | Yes |
-| **CV/Syntax** | {::nomarkdown}<ul><li>Prefer use of [EDTF](https://www.loc.gov/standards/datetime/) for both known and uncertain dates<li>DPLA can parse many types and formats of dates. Please refer to their [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for examples |
+| **CV/Syntax** | {::nomarkdown}<ul><li>Prefer use of [EDTF](https://www.loc.gov/standards/datetime/) for both known and uncertain dates<li>DPLA can parse many types and formats of dates. Please refer to their [Geographic and Temporal Guidelines](https://docs.google.com/document/d/1lfiJ8yoZf1fAoR5vmJoHpWQO63eKeL8HDGVupCocfoM/edit?usp=sharing) for examples</li></ul>{:/} |
 | **Notes and Best Practices** | {::nomarkdown}<ul><li>Avoid use of placeholder values (e.g., "Unknown", "n.d."). If a date is unknown, we encourage including an estimated date range or value compatible with EDTF. If an estimate cannot be made, leave the field blank<li>For guidance on dates or date ranges that reflect "aboutness" (for example, a memoir about the 1870s) please see [Temporal Coverage](#temporal)<li>Except where appropriate for born-digital objects, do not map dates of digitization or digital publication (as opposed to the creation of the original) to dcterms:date or dc:date. Institutions with QDC support may use alternate mappings such as dcterms:issued or dcterms:available. Institutions without QDC support should map only the date the item was created to dc:date</li></ul>{:/} |
 | **Examples** | {::nomarkdown}<ul><li>Known date</li><ul><li>1999</li><li>1999-05</li><li>1999-05-01</li></ul><li>Uncertain date</li><ul><li>1999?</li><li>199u</li><li>1999-05?</li><li>1999-05-01?</li></ul><li>Approximate date</li><ul><li>1999&#126;</li><li>1999-05&#126;</li><li>1999-05-01&#126;</li></ul><li>Date range</li><ul><li>1992/1995</li><li>1990-02-08/2017-03-09</li><li>1984/2004-06&#126;</li></ul><li>Acceptable non-EDTF values</li><ul><li>circa 1999</li><li>ca. 1999</li><li>approximately 1999</li><li>1992-1995</ul></ul>{:/} |
 
@@ -253,7 +253,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
 | **Notes and Best Practices** | {::nomarkdown}<ul><li>Recommend use of a content standard such as [RDA](https://www.loc.gov/aba/rda/), [CCO](http://vraweb.org/resources/cataloging-cultural-objects/), or [DCRMS](http://rbms.info/dcrm/dcrms/) when applicable</li><li>Use a semicolon to separate multiple values</li></li>For dimensions, include units. Spell out abbreviations for maximum clarity</li><li>For video or sound recording run times, use HH:MM:SS format with leading zeros when necessary</li></ul>{:/} |
-| **Examples** | {::nomarkdown}<ul><li>4 7/8 x 8 3/16 inches</li><li>1 map on 13 sheets</li><li>00:14:21</li> |
+| **Examples** | {::nomarkdown}<ul><li>4 7/8 x 8 3/16 inches</li><li>1 map on 13 sheets</li><li>00:14:21</li></ul>{:/} |
 
 <br>
 
@@ -322,7 +322,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | IIIF_Man |
 | **Repeatable** | No |
 | **Notes and Best Practices** | {::nomarkdown}<ul><li>Must resolve to a IIIF manifest</li><li>For institutions that do not supply IIIF information with their metadata, it may be derived from metadata elsewhere in the record. For example, a IIIF Manifest URI may be derived from the URL for the digital object</li></ul>{:/} |
-| **Examples** | {::nomarkdown}<ul><li>https://digital.library.temple.edu/iiif/info/p245801coll0/4024/manifest.json</li><li>https://digital.library.villanova.edu/Item/vudl:92879/Manifest |
+| **Examples** | {::nomarkdown}<ul><li>https://digital.library.temple.edu/iiif/info/p245801coll0/4024/manifest.json</li><li>https://digital.library.villanova.edu/Item/vudl:92879/Manifest</li></ul>{:/} |
 
 <br>
 
@@ -347,7 +347,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Language |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Use standard or consistently applied local vocabularies; [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data ) is preferred |
-| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values</li><li>Do not use for non-linguistic content such as images containing no text</li> |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use a semicolon to separate multiple values</li><li>Do not use for non-linguistic content such as images containing no text</li></ul>{:/} |
 | **Examples** | {::nomarkdown}<ul><li>eng</li><li>fre</li><li>afr ; afu ; eng</li></ul>{:/} |
 
 <br>
@@ -402,7 +402,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Publisher |
 | **Repeatable** | Yes |
 | **CV/Syntax** | {::nomarkdown}<ul><li>Use standard vocabularies such as [LCNAF](http://id.loc.gov/) or [VIAF](https://viaf.org/) whenever possible; consistently applied local vocabularies are acceptable</li><li>If an authorized form is unavailable, use similar syntax; semicolons may be used as punctuation</li></ul>{:/} |
-| **Notes and Best Practices** | <ul></li>Use this field for published materials such as books, magazines, and journals</li><li>Use a semicolon to separate multiple values</li><li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher</li><li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”</li><li>Not to be used for the entity responsible for digitizing or making the digital representation available</li></ul>{:/} |
+| **Notes and Best Practices** | {::nomarkdown}<ul></li>Use this field for published materials such as books, magazines, and journals</li><li>Use a semicolon to separate multiple values</li><li>Avoid use of placeholder values (e.g., “Unknown”, “s.n.”); leave the field blank if a publisher cannot be accurately determined or if there is no publisher</li><li>Avoid use of qualifying terms except in cases where a role is included in the authorized form. For example, prefer “Rand McNally and Company” not “Rand McNally and Company, publisher”</li><li>Not to be used for the entity responsible for digitizing or making the digital representation available</li></ul>{:/} |
 | **Examples** | {::nomarkdown}<ul><li>Rand McNally and Company</li><li>Philadelphia Evening Bulletin</li></ul>{:/} |
 
 <br>
@@ -459,7 +459,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights |
 | **Repeatable** | Yes |
 | **CV/Syntax** | Natural language; semicolons may be used as punctuation |
-| **Notes and Best Practices** | {::nomarkdown}<ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to [Rights URI](#rightsU)</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See [Rights URI](#rightsU) for guidance on using and mapping rights statement URIs |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Values that are not URIs will map to PA Digital’s Rights field; URIs will map to [Rights URI](#rightsU)</li><li>Use of a URI is preferred over natural language or textual statements</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>If using natural language, use clear, standardized statements; statements that provide only contact or reproduction information are insufficient</li><li>Natural language statements should not contradict, or merely reiterate, the rights statement from RightsStatements.org or Creative Commons; URIs will resolve to a textual statement in the DPLA portal</li><li>See [Rights URI](#rightsU) for guidance on using and mapping rights statement URIs</li></ul>{:/} |
 | **Examples** | {::nomarkdown}<ul><li>Copyright status of the resource is unknown.</li><li>In the public domain and may be used without copyright restriction.</li></ul>{:/} |
 
 <br>
@@ -488,7 +488,7 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | **CSV Header** | Rights_URI |
 | **Repeatable** | No |
 | **CV/Syntax** | Must use URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/) |
-| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See [Rights](#rights) for guidance on using and mapping natural language rights statements |
+| **Notes and Best Practices** | {::nomarkdown}<ul><li>Use this field for persistent URIs from [RightsStatements.org](http://rightsstatements.org/en/) or [Creative Commons](https://creativecommons.org/). These URIs will enable machine-readable and machine-actionable rights statements. URIs will point to web pages that provide more information on each rights statement and will resolve to a textual statement in the DPLA portal</li><li>The value must be the URI and not the URL for the web page describing the statement<ul><li>Correct: http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>Incorrect: https://rightsstatements.org/page/NoC-US/1.0/?language=en</li></ul><li>Fields with URIs should contain no other text</li><li>If supplying both a URI and a natural language statement, use separate fields. Both may be mapped to dcterms:rights or dc:rights</li><li>See [Rights](#rights) for guidance on using and mapping natural language rights statements</li></ul>{:/} |
 | **Examples** | {::nomarkdown}<ul><li>http://rightsstatements.org/vocab/InC-RUU/1.0/</li><li>http://rightsstatements.org/vocab/NoC-US/1.0/</li><li>https://creativecommons.org/publicdomain/zero/1.0/</li></ul>{:/} |
 
 <br>
