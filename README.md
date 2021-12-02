@@ -150,13 +150,6 @@ Fields are arranged alphabetically by PA Digital label. Descriptors with no cont
 | PA Digital Label | Alternative Title |
 |--|--|
 | **Status** | Optional |
-| **Description** | Any alternative title of the described resource including abbreviations and translations |
-| **Qualified DC Element** | dcterms:alternative |
-| **CONTENTdm Mapping** | Title-Alternative |
-| **CSV Header** | Alternative_Title |
-| **Repeatable** | Yes |
-| **CV/Syntax** | Natural language |
-| **Notes and Best Practices** | {::nomarkdown}<ul><li>Comparable to MARC variations of titles (such as alternative spellings)</li><li>May also be used for translations of titles in foreign languages</li><li>Avoid use of explanatory or qualifying symbols (e.g., brackets)</li><li>Where there are multiple Title fields, any instance after the first will map to Alternative Title</li></ul>{:/} |
 
 <br>
 
