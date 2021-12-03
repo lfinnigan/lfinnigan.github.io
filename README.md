@@ -69,13 +69,13 @@ Contributors to PA Digital should strive to provide shareable, quality metadata.
 
 * **Controlled vocabularies.** The use of widely-adopted vocabularies helps to better integrate records from other contributing institutions.
 
-In the spirit of shareable metadata, note that PA Digital and DPLA require that metadata (_but not digital content_) be licensed as <a href="https://creativecommons.org/about/cc0">CC0</a> ("No rights reserved"). The following excerpt from _<a href="https://pro.dp.la/hubs/metadata-application-profile">The Digital Public Library of America Policy Statement on Metadata</a>_ speaks to the importance of this policy in fulfilling DPLA’s mission and values: 
+In the spirit of shareable metadata, note that PA Digital and DPLA require that metadata (_but not digital content_) be licensed as <a href="https://creativecommons.org/about/cc0">CC0</a> ("No rights reserved"). The following excerpt from <a href="https://pro.dp.la/hubs/metadata-application-profile">The Digital Public Library of America Policy Statement on Metadata</a> speaks to the importance of this policy in fulfilling DPLA’s mission and values: 
 
-<blockquote>"The DPLA aims to make the cultural and scientific record available, free of charge, to all through databases of metadata. The DPLA, for this purpose, has undertaken the task of ingesting, indexing, enriching, and making available descriptive metadata and wishes to make such metadata widely available for reuse.
+_"The DPLA aims to make the cultural and scientific record available, free of charge, to all through databases of metadata. The DPLA, for this purpose, has undertaken the task of ingesting, indexing, enriching, and making available descriptive metadata and wishes to make such metadata widely available for reuse._
 
-<p>The DPLA wishes to promote innovation in the development of applications and tools that use and rely on this metadata. In order to foster such innovation, the DPLA is committed to ensuring such metadata is unencumbered by legal restrictions. This policy and statement on metadata contained in the DPLA’s databases reflects that commitment. To that same end, the DPLA believes this policy is in accord with the letter and spirit of United States copyright law and would be fully respected in a court of law.
+_The DPLA wishes to promote innovation in the development of applications and tools that use and rely on this metadata. In order to foster such innovation, the DPLA is committed to ensuring such metadata is unencumbered by legal restrictions. This policy and statement on metadata contained in the DPLA’s databases reflects that commitment. To that same end, the DPLA believes this policy is in accord with the letter and spirit of United States copyright law and would be fully respected in a court of law._
 
-<p>The DPLA hopes that the content and resources in the library will be put to creative uses that educate, inform, and empower current and future generations."</blockquote>
+_The DPLA hopes that the content and resources in the library will be put to creative uses that educate, inform, and empower current and future generations."_
 
 <br>
 
